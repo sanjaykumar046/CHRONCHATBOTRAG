@@ -1,0 +1,1 @@
+from rag.config import OLLAMA_BASE_URL, OLLAMA_MODEL

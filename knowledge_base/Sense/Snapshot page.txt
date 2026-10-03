@@ -1,0 +1,31 @@
+Page Name
+Snapshot
+
+Module Name
+Sense
+
+Overview
+The Snapshot page provides a summarized tabular view of workforce productivity and organizational performance for the selected reporting period. It consolidates employee activity data by grouping records based on Department, Designation Category, and Shift, enabling users to analyze workforce distribution, productivity, and operational efficiency from a single view.
+The page presents aggregated workforce information, including the total number of employees, employee instances, productive staff count, non-productive staff count, average productive hours, average logged hours, and average idle hours for each organizational group. Instead of displaying individual employee records, the page provides department-level and shift-level summaries, making it easier to evaluate workforce performance across different organizational segments.
+Users can filter the report using Employee ID, Employee Name, Department, Designation, Designation Category, Project, Shift, Team, and Date Range. After applying the selected filters, the system retrieves the corresponding employee activity data, groups it into summarized organizational records, and displays the results in an interactive table.
+The Snapshot page is primarily designed for administrators, managers, and leadership users who require a consolidated operational view of workforce performance. It enables users to compare productivity across departments, designation categories, and shifts, identify productive and non-productive workforce distribution, monitor average working hours, and support workforce planning through summarized operational insights.
+
+Purpose
+The primary purpose of the Snapshot page is to provide a consolidated summary of workforce performance across different organizational groups. It helps managers and administrators quickly understand how employees are distributed across departments, designation categories, and work shifts while providing key productivity indicators for each group.
+The page simplifies workforce analysis by converting large volumes of employee activity records into meaningful summarized information. It enables users to monitor productive and non-productive staff distribution, compare average working hours across organizational units, evaluate departmental performance, and identify operational trends without reviewing individual employee records. The summarized view supports workforce planning, productivity monitoring, resource allocation, and informed business decision-making.
+
+
+Features
+* Displays a summarized workforce performance table grouped by Department, Designation Category (Role), and Shift, providing a consolidated organizational view instead of individual employee records. 
+* Displays the Number of Employees for each organizational group, representing the count of unique employees within the selected filters. 
+* Displays Employee Instance, indicating the total number of employee activity records available for each grouped category during the selected reporting period. 
+* Displays the Productive Staff Count, showing the number of employee activity records classified as productive within each department, designation category, and shift combination. 
+* Displays the Non-Productive Staff Count, showing the number of employee activity records classified as non-productive for each organizational group. 
+* Displays the Average Productive Hours, allowing users to compare productive working time across different organizational groups. 
+* Displays the Average Logged Hours, providing the average logged-in duration of employees within each summarized group. 
+* Displays the Average Idle Hours, enabling users to evaluate inactive working time across departments, designation categories, and shifts. 
+* Supports filtering using Employee ID, Employee Name, Department, Designation, Designation Category, Project, Shift, Team, and Date Range, allowing users to generate customized summary reports for specific organizational segments. 
+* Provides Filter and Reset actions to apply or clear the selected criteria and regenerate the summarized report. 
+* Supports CSV Export, allowing users to export the summarized workforce report for reporting, auditing, and further business analysis. 
+* Displays the summarized data in a paginated table with horizontal and vertical scrolling, enabling efficient navigation of large datasets while maintaining report readability.
+

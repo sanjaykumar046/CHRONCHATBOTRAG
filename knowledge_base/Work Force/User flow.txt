@@ -1,0 +1,41 @@
+Page Name
+User Flow
+
+Module Name
+Work Stream
+
+Overview
+The User Flow page provides a complete monthly timeline of an individual employee's work activities. Unlike the Daily Flow page, which displays multiple employees for a single day, the User Flow page focuses on a single employee and visualizes their activity patterns across an entire month. It enables managers and leadership to understand how an employee's work behavior changes from day to day during the selected reporting period.
+Users can filter the report by Employee ID, Month, and Year. Based on the selected filters, the system retrieves the employee's daily activity records and displays a separate timeline for each working day within the selected month. Each timeline illustrates the sequence and duration of employee activities, allowing users to compare daily work patterns throughout the month.
+The timeline categorizes employee activities into Productive Time, Break Time, Meeting Time, and Missing Time using color-coded activity segments. This enables managers to identify consistency in work behavior, monitor productivity trends, detect excessive breaks or missing activity, and evaluate the employee's overall monthly work pattern.
+The User Flow page is primarily used by managers, leadership, HR, and administrators to monitor an individual employee's monthly activity history, analyze work behavior over time, identify productivity trends, and gain operational insights into employee performance across an entire month.
+
+Purpose
+The primary purpose of the User Flow page is to provide a comprehensive month-wise visualization of an individual employee's daily work activities. It enables managers and administrators to review how a single employee utilizes their working hours across multiple days instead of focusing on a single day.
+The page supports workforce analysis by helping organizations monitor employee consistency, identify productivity patterns, compare daily work behavior throughout the month, detect inactive periods, and evaluate long-term work trends. By presenting each day's activities in a chronological timeline, the page provides a clear understanding of the employee's monthly work behavior and operational performance.
+
+
+
+
+Features
+* Displays a month-wise activity timeline for a single employee. 
+* Supports filtering using: 
+o Employee ID 
+o Month 
+o Year 
+* Provides Filter functionality to generate the User Flow report based on the selected criteria. 
+* Provides Reset functionality to clear all selected filters and restore the default view. 
+* Supports exporting the filtered User Flow report for reporting and offline analysis. 
+* Displays a separate daily activity timeline for every working day within the selected month. 
+* Categorizes employee activities into: 
+o Productive Time 
+o Break Time 
+o Meeting Time 
+o Missing Time 
+* Uses color-coded timeline segments to visually distinguish each activity category for easier interpretation. 
+* Displays employee activities in chronological order for each day, enabling users to compare work patterns across the selected month. 
+* Enables managers and leadership to analyze productivity trends, work consistency, and activity distribution for an individual employee over an extended period. 
+* Retrieves employee activity records dynamically based on the selected Employee ID, Month, and Year and updates the timeline accordingly. 
+* Supports pagination when the selected month contains a large number of working days. 
+* Displays loading indicators and validation messages while employee activity data is being retrieved, ensuring a smooth and responsive user experience.
+

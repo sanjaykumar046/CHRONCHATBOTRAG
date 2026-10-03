@@ -1,0 +1,82 @@
+Module Name
+Attendance
+Page Name
+Leave Applications
+Overview
+The Leave Applications page enables employees to submit and manage leave requests while allowing authorized users to review, approve, reject, or withdraw leave applications. It provides a monthly view of all leave requests along with their status, leave duration, reason, approval details, and available actions. Employees can apply for different leave types, monitor the progress of submitted requests, and withdraw pending applications. Administrators and Leadership users can process leave requests through approval or rejection workflows, ensuring an organized and transparent leave management process. 
+Purpose
+The purpose of the Leave Applications page is to simplify the leave request process by providing a centralized interface for submitting, tracking, approving, rejecting, and withdrawing leave applications. It helps maintain accurate leave records, streamlines approval workflows, and ensures leave requests are processed according to organizational policies. 
+Features
+Leave Application Management
+Allows employees to:
+* Submit new leave applications. 
+* View previously submitted leave requests. 
+* Track leave approval status. 
+* Withdraw pending leave requests before approval. 
+Monthly Navigation
+Users can:
+* Navigate between previous and next months. 
+* View leave applications for the selected month. 
+* Automatically load leave records based on the selected month. 
+Leave Application Form
+Employees can submit leave requests by providing:
+* Leave Type 
+* From Date 
+* To Date 
+* Total Leave Days (calculated automatically) 
+* Reason for Leave 
+Employee ID and Employee Name are populated automatically from the logged-in user profile. 
+Supported Leave Types
+The page supports multiple leave categories, including:
+* Casual Leave (CL) 
+* Sick Leave (SL) 
+* Privilege / Earned Leave (PL) 
+* Loss of Pay (LOP) 
+* Work From Home (WFH) 
+* On Duty (OD) 
+* Compensatory Off (CO) 
+* Maternity Leave (ML) 
+* Paternity Leave (PLV) 
+* Bereavement Leave (BRV) 
+Automatic Leave Duration Calculation
+The system automatically calculates the total number of leave days based on the selected From Date and To Date. It also validates that:
+* From Date is not in the past. 
+* To Date is not earlier than the From Date. 
+Leave Applications Table
+Displays complete leave request information, including:
+* Employee ID 
+* Employee Name 
+* From Date 
+* To Date 
+* Total Days 
+* Leave Reason 
+* Applied By 
+* Due Date 
+* Actioned By 
+* Actioned Date 
+* Comments 
+* Leave Type 
+* Leave Status 
+* Available Actions 
+Leave Status Tracking
+Each leave application displays its current status, such as:
+* Pending Approval 
+* Approved 
+* Rejected 
+* Withdrawn 
+* Auto Rejected 
+This enables employees and administrators to monitor the progress of every leave request. 
+Approval Workflow
+Authorized users (Admin and Leadership) can:
+* Approve leave requests. 
+* Reject leave requests with comments. 
+* Record approval actions. 
+* Refresh the leave list after processing requests. 
+Leave Withdrawal
+Employees can withdraw their own leave requests while the application is still in the Pending Approval state. 
+Role-Based Access
+Access to leave actions is controlled by user roles.
+* Employee/Executive – Apply for leave, view leave history, and withdraw pending applications. 
+* Admin – View all leave requests, approve or reject applications, and manage leave records. 
+* Leadership – Review, approve, or reject leave applications for authorized employees
+

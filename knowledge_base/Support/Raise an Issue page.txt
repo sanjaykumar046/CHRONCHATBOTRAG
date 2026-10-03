@@ -1,0 +1,60 @@
+Module Name
+Support
+Page Name
+Raise Issue
+Overview
+The Raise Issue page allows users to report problems, bugs, or system-related issues encountered while using the CHRON AI application. Users can submit detailed issue reports by selecting the affected module and page, providing a description, setting the priority level, and specifying the impacted client and number of affected users. Once submitted, the issue follows an approval workflow where it is reviewed by leadership before being assigned to the development team for resolution.
+
+Purpose
+The purpose of the Raise Issue page is to provide a centralized issue reporting system that ensures application problems are properly documented, reviewed, approved, and tracked through the resolution process.
+
+Features
+Raise New Issue
+Users can submit a new issue by providing:
+* Menu (Affected Module) 
+* Page Name 
+* Issue Title 
+* Detailed Description 
+* Priority Level 
+* Number of Impacted Users 
+* Client Type 
+* Client Name 
+
+Issue Details
+The issue form captures complete information required for investigation, including:
+* Location of the issue within the application 
+* Issue summary 
+* Detailed explanation 
+* Business impact 
+* Client information 
+* Priority level 
+
+Priority Selection
+Users can classify the severity of the issue using predefined priority levels, helping reviewers and developers determine the urgency of resolution.
+
+Client Identification
+Issues can be associated with a specific client or client group, enabling faster identification of affected environments.
+
+Impact Assessment
+Users specify the number of impacted users, allowing leadership to understand the business impact before approving the request.
+
+Issue Submission
+After completing all mandatory fields, users can submit the issue.
+The issue is recorded and enters the approval workflow for further processing.
+
+Issue Workflow
+1. User identifies an issue in the application. 
+2. User completes the Raise Issue form. 
+3. The issue is submitted for review. 
+4. Leadership reviews the reported issue. 
+5. If approved, the issue is forwarded to the Development Team. 
+6. The Development Team investigates, fixes, and resolves the issue. 
+7. The issue status is updated after resolution. 
+
+Access Control
+The Raise Issue page is available to authorized users who need to report application issues.
+Supported Roles
+* Users – Can create and submit new issues. 
+* Leadership – Reviews and approves submitted issues before assigning them to the development team. 
+* Development Team – Receives approved issues for investigation, implementation, and resolution.
+

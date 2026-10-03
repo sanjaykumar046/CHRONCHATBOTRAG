@@ -1,0 +1,50 @@
+Page Name
+Org Chart
+
+Module Name
+Sense
+
+Overview
+The Org Chart page provides a visual representation of the organization's reporting hierarchy for the logged-in employee. It displays the reporting relationship between the employee, their reporting manager, and their direct reportees in a hierarchical tree structure, enabling users to understand the organizational structure and reporting chain.
+The page presents three hierarchical levels: the employee's reporting manager (Reports To), the logged-in employee (You), and all direct reportees. Each employee is displayed as an interactive profile card containing the employee name, employee ID, and designation category. Users can select any employee card to view additional profile information, including department, email address, reporting manager, and reportee count. 
+In addition to the organizational hierarchy, the page provides a Team Overview panel that summarizes the reporting structure by displaying the total number of reportees, departments, designation categories, and the reporting manager. Separate summary sections display department-wise and designation-wise distributions of the employee's direct reportees, helping leadership understand team composition at a glance. 
+The Org Chart page is primarily used by employees, managers, leadership, and administrators to understand reporting relationships, identify team structures, review organizational hierarchy, and access basic employee profile information within their reporting scope.
+
+Purpose
+The primary purpose of the Org Chart page is to provide a clear visualization of organizational reporting relationships and team structure. It enables users to quickly identify who they report to, who reports to them, and how their team is organized within the organization.
+The page supports workforce management by providing an interactive organizational hierarchy along with team statistics and employee profile information. It helps managers review reporting structures, understand team composition, monitor departmental distribution, and easily access employee information without navigating through multiple screens.
+
+
+
+
+Features
+* Displays the organizational hierarchy using a hierarchical tree structure consisting of: 
+o Reporting Manager (Reports To) 
+o Logged-in Employee (You) 
+o Direct Reportees 
+* Displays each employee as an interactive profile card containing: 
+o Employee Name 
+o Employee ID 
+o Designation Category 
+o Profile Avatar 
+* Allows users to click any employee card to view detailed employee information in a profile panel. 
+* Displays employee profile details including: 
+o Employee Name 
+o Employee ID 
+o Email Address 
+o Department 
+o Reporting Manager 
+o Number of Reportees 
+o Designation Category 
+* Provides a Team Overview section displaying: 
+o Total Reportees 
+o Number of Departments 
+o Number of Designation Categories 
+o Reporting Manager 
+* Displays Department-wise distribution of direct reportees, showing the number of employees available in each department. 
+* Displays Designation-wise distribution of direct reportees, enabling users to understand the composition of their team based on designation categories. 
+* Highlights the logged-in employee with a dedicated "YOU" indicator to clearly identify their position within the organizational hierarchy. 
+* Automatically retrieves the reporting hierarchy based on the logged-in employee and dynamically generates the organizational tree. 
+* Supports both Light and Dark themes while maintaining the organizational hierarchy, employee cards, and profile details consistently across the interface. 
+* Displays loading indicators, connection error messages, and retry functionality when organizational data cannot be retrieved from the server.
+

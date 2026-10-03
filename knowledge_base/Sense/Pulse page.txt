@@ -1,0 +1,83 @@
+Page : Pulse 
+
+Module : Sense 
+
+
+Overview
+The Pulse page serves as the primary dashboard of the Sense module, providing a centralized and real-time overview of workforce activities, employee attendance, productivity metrics, operational status, and workforce health. It consolidates key workforce information into a single interface, enabling users to monitor organizational performance without navigating through multiple pages.
+The page presents workforce insights using a weekly reporting period, where all metrics, charts, and analytical data are calculated and displayed based on the selected week's data. This allows users to monitor workforce performance, identify trends, and compare operational activities throughout the week.
+The page displays workforce-related information using summary cards, analytical charts, visual indicators, attendance calendars, shift monitoring, and employee status widgets. It provides insights into key operational metrics such as Total Employees, Logged Hours, Productive Hours, Idle Hours, Time on System, Away From System, Workforce Efficiency, employee attendance status, shift distribution, and team availability. These metrics are presented through interactive visualizations and summary components to help users quickly understand the current state of the workforce.
+The Pulse page is primarily designed for administrators, leadership users, managers, and other authorized users who require visibility into workforce operations and employee activities. Based on the user's permissions, the dashboard retrieves and displays workforce information relevant to their organizational scope.
+The page combines both real-time and historical information. Current employee status, attendance status, shift information, and workforce availability are retrieved dynamically, while charts and analytical widgets present aggregated workforce data for the selected weekly reporting period. The attendance calendar displays monthly attendance records, while the remaining dashboard components focus on week-wise operational analytics.
+When the page is opened, it automatically loads the current week's data, retrieves workforce information through the configured APIs, processes the returned data, performs the required calculations, and renders all dashboard components. Individual widgets independently request their respective datasets, ensuring that workforce metrics, attendance information, shift status, employee lists, and analytical charts are updated with the latest available data. Several dashboard components also implement temporary client-side caching to improve loading performance and reduce repeated API requests.
+The information presented on this page helps managers and business leaders monitor workforce productivity, evaluate employee availability, identify inactive or offline employees, review attendance patterns, compare operational metrics, monitor shift distribution, and assess overall workforce efficiency. These insights support day-to-day operational monitoring, workforce planning, productivity analysis, and informed business decision-making.
+The Pulse page acts as the central entry point for workforce monitoring within the Sense module and integrates information from multiple platform features, including Attendance, Work Stream, employee activity monitoring, shift management, workforce analytics, and organizational reporting. It provides a unified operational view by consolidating data from these components into a single dashboard, allowing users to quickly identify workforce trends, operational issues, and employee activity without accessing each module individually.
+
+Purpose
+The purpose of the Pulse page is to provide a centralized workforce monitoring dashboard that enables users to view, analyze, and monitor key workforce metrics from a single location. It helps administrators, managers, and leadership users quickly understand the current operational status of the organization by presenting weekly workforce analytics, employee attendance, productivity metrics, workforce efficiency, shift status, team availability, and employee activity insights.
+The page is designed to simplify workforce monitoring by consolidating critical operational information into an interactive dashboard, eliminating the need to access multiple modules to review employee performance and organizational health. By presenting both real-time workforce status and weekly analytical data, the Pulse page enables users to identify productivity trends, monitor employee availability, track attendance patterns, evaluate workforce efficiency, detect operational issues, and support informed business decisions based on accurate workforce data.
+The Pulse page also serves as the primary entry point for workforce analytics within the Sense module, providing users with a quick operational summary and enabling them to navigate to detailed views for further analysis when required.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Features
+The Pulse page provides multiple dashboard components that collectively deliver a comprehensive view of workforce operations, employee activities, productivity, attendance, and organizational performance. Each feature is designed to present specific workforce insights and support operational monitoring and decision-making.
+Workforce Efficiency
+Displays the overall Workforce Efficiency Score, which represents the organization's workforce performance based on productivity, attendance, and idle control metrics. The widget also displays individual metric contributions, target score comparison, previous period comparison, and the current workforce performance status, enabling users to evaluate overall workforce health.
+Workforce Analytics Dashboard
+Provides week-wise analytical insights into key workforce metrics through interactive charts and summary cards. The dashboard includes the following operational metrics:
+* Logged Hours 
+* Productive Hours 
+* Idle Hours 
+* Away From System 
+* Time on System 
+Each metric displays its current value, percentage change compared to the previous reporting period, and graphical trends, allowing users to analyze workforce performance and operational patterns throughout the selected week.
+
+Logged Hours
+Displays the average total duration employees remain logged into the system during the selected reporting period. This metric helps users understand overall workforce availability and active working time.
+Productive Hours
+Displays the average time employees spend performing productive work activities. It enables managers to evaluate workforce productivity and measure effective working time.
+Idle Hours
+Displays the average duration employees remain idle while logged into the system. This metric helps identify inactive periods and supports productivity improvement initiatives.
+Away From System
+Displays the average duration employees are away from their systems during working hours. This information helps organizations monitor employee availability and identify prolonged periods of inactivity.
+
+Time on System
+Displays the average amount of time employees actively use their assigned systems during the selected reporting period. This metric provides insights into overall system utilization and employee engagement.
+Total Employees Summary
+Displays the total number of employees available within the user's accessible organizational scope. This widget provides a quick overview of workforce strength and organizational coverage for the selected reporting period.
+Attendance Calendar
+Displays the monthly attendance status of the logged-in employee using an interactive calendar. Attendance statuses such as Present, Absent, Leave, Half Day, Week Off, Holiday, Home, Office, and Regularisation are represented using color-coded indicators. Users can navigate between months and access the detailed Attendance Calendar page for additional attendance information.
+Shift Status
+Displays employee distribution across different work shifts and categorizes employees based on their current status, including Active, Inactive, and Offline. Department and Team filters are available to monitor shift-specific workforce information and identify employee availability within each shift.
+My Team
+Displays employees within the logged-in user's organizational scope along with their current working status. Users can search employees, filter them based on their activity status, and view additional employee activity details through the employee information popup.
+Employee Status Monitoring
+Provides real-time visibility into employee availability by categorizing employees as Active, Inactive, or Offline. This enables managers to quickly identify workforce availability and monitor operational readiness throughout the organization.
+Weekly Workforce Monitoring
+The Pulse page is designed to provide workforce analytics based on a weekly reporting period. All workforce metrics, analytical charts, and summary information are calculated and displayed using the selected week's data, while the attendance calendar continues to display monthly attendance records.
+Interactive Dashboard
+All dashboard components retrieve data independently through their respective APIs, allowing widgets to refresh individually without affecting the overall dashboard. This improves performance while ensuring each component displays the latest available information.
+Dashboard Navigation
+Provides quick navigation to related pages, including the detailed Attendance Calendar, allowing users to perform deeper analysis of attendance information and workforce activities.
+
+Automatic Data Refresh and Caching
+The dashboard automatically loads workforce information when the page is opened and refreshes data whenever required. Selected dashboard components implement temporary client-side caching to reduce unnecessary API requests and improve page performance while ensuring users receive updated workforce information.
+Visual Workforce Insights
+The Pulse page presents workforce information through summary cards, analytical charts, attendance calendars, status indicators, tables, and employee lists. This enables users to quickly monitor workforce performance, employee productivity, attendance, operational trends, and organizational health from a single centralized dashboard.
+
+
+

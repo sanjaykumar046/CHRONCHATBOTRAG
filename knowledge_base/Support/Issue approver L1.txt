@@ -1,0 +1,63 @@
+Module Name
+Support
+Page Name
+Issue Approver – L1
+Overview
+The Issue Approver – L1 page enables Leadership (Level 1 Approvers) to review, approve, reject, and monitor issues submitted by users. It provides a centralized dashboard displaying issue statistics, filtering options, and the current status of all issues awaiting approval. Once an issue is approved, it is forwarded to the Development Team for investigation and resolution.
+
+Purpose
+The purpose of the Issue Approver – L1 page is to provide the first level of approval for reported issues, ensuring that only validated and business-relevant issues are assigned to the Development Team.
+
+Features
+Issue Dashboard
+Displays a summary of all issues categorized by their current status, including:
+* Total Issues 
+* Pending 
+* Acknowledged 
+* In Progress 
+* Resolved 
+* Closed 
+
+Issue Review
+Leadership can review all issues submitted by users, including their details, priority, and current status before making an approval decision.
+
+Issue Approval
+Leadership can approve valid issues.
+Once approved:
+* The issue is forwarded to the Development Team. 
+* The development team begins investigation and resolution. 
+
+Issue Rejection
+If an issue is incomplete, invalid, or does not require development effort, Leadership can reject the request.
+
+Search and Filters
+The page provides filtering options to quickly locate issues using:
+* Date Range 
+* Issue Title or User Search 
+* Issue Status 
+* Priority Level 
+
+Issue Status Tracking
+Leadership can monitor the complete lifecycle of every issue through different stages, including:
+* Pending 
+* Acknowledged 
+* In Progress 
+* Resolved 
+* Closed 
+
+Approval Workflow
+1. User raises an issue using the Raise Issue page. 
+2. The issue appears in the Issue Approver – L1 dashboard. 
+3. Leadership reviews the issue details. 
+4. Leadership either: 
+o Approves the issue, or 
+o Rejects the issue. 
+5. Approved issues are forwarded to the Development Team. 
+6. The Development Team investigates and resolves the issue. 
+7. The issue status is updated until it is finally marked as Closed. 
+
+Access Control
+The Issue Approver – L1 page is intended for leadership users responsible for reviewing reported issues.
+Supported Role
+* Leadership (L1 Approver) – Can review, approve, reject, filter, search, and monitor issues before they are assigned to the Development Team. 
+

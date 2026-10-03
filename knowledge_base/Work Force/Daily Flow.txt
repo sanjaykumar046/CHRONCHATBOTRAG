@@ -1,0 +1,46 @@
+Page Name
+Daily Flow
+
+Module Name
+Work Stream
+
+Overview
+The Daily Flow page provides a detailed visualization of employee work activities for a selected day. It enables managers and leadership to monitor how employees utilize their working hours by displaying a chronological timeline of daily activities. The page presents employee activity in a horizontal time-based chart, allowing users to understand the sequence and duration of work performed throughout the day.
+Users can filter the report using Employee ID, Employee Name, Department, Designation, Designation Category, Project, Shift, Team, and a specific working date. Based on the selected filters, the system retrieves employee activity records and displays the daily activity timeline for all matching employees.
+The timeline categorizes employee activities into Productive Time, Break Time, Meeting Time, and Missing Time, providing a clear visual representation of how each employee spent their working hours. A summary panel is also displayed alongside the timeline, showing the total duration of each activity category for every employee, making it easier to compare workforce productivity and daily work patterns.
+The Daily Flow page is primarily used by managers, leadership, HR, and administrators to monitor employee work behavior, evaluate daily productivity, identify inactive periods, analyze work distribution, and gain operational visibility into employee activities during a selected working day.
+
+Purpose
+The primary purpose of the Daily Flow page is to provide a comprehensive day-wise view of employee activities and working patterns. It enables managers and administrators to understand how employees spend their working hours by visualizing productive work, breaks, meetings, and periods of missing activity throughout the selected day.
+The page supports operational monitoring by helping organizations identify productivity trends, compare employee work patterns, detect excessive inactive periods, and evaluate daily workforce utilization. By presenting employee activities in a chronological timeline, it enables leadership to make informed decisions regarding workforce efficiency, performance monitoring, and operational planning.
+
+
+
+Features
+* Displays a day-wise activity timeline for employees using a horizontal time-based visualization. 
+* Supports filtering using: 
+o Employee ID 
+o Employee Name 
+o Department 
+o Designation 
+o Designation Category 
+o Project 
+o Shift 
+o Team 
+o Selected Date 
+* Provides Filter functionality to generate the Daily Flow report based on the selected criteria. 
+* Provides Reset functionality to clear all selected filters and restore the default view. 
+* Supports exporting the filtered Daily Flow report for reporting and offline analysis. 
+* Displays employee activities in chronological order throughout the selected working day. 
+* Categorizes employee activities into: 
+o Productive Time 
+o Break Time 
+o Meeting Time 
+o Missing Time 
+* Uses color-coded timeline segments to visually distinguish each activity category for better readability and analysis. 
+* Displays a summary table alongside the timeline showing the total duration of Productive Time, Break Time, Meeting Time, and Missing Time for each employee. 
+* Enables managers to compare daily work patterns and activity distribution across multiple employees on the same working day. 
+* Retrieves employee activity records dynamically based on the selected filters and updates the timeline accordingly. 
+* Supports pagination for navigating through multiple employee records when large datasets are available. 
+* Displays loading indicators and validation messages while employee activity data is being retrieved, ensuring a smooth user experience.
+

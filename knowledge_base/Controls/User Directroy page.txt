@@ -1,0 +1,69 @@
+Module Name
+Controls
+Page Name
+User Directory
+Overview
+The User Directory page is used to create and manage employee records within the system. Administrators can create individual users using a user creation form or add multiple users simultaneously by uploading an Excel file. The page also provides user statistics, filtering options, export functionality, and a centralized directory of all registered users.
+
+Purpose
+The purpose of the User Directory is to maintain the organization's employee master records. It simplifies onboarding by supporting both single-user creation and bulk user import while providing a searchable directory for user management.
+
+Features
+User Summary
+Displays an overview of user statistics, including:
+* Total Users 
+* Active Users 
+* Inactive Users 
+
+Single User Creation
+Administrators can create a new employee individually by clicking the Add Employee button and completing the employee information form.
+
+Bulk User Upload
+Supports bulk user creation by uploading an Excel file containing employee details.
+Features include:
+* Upload Excel file 
+* Validate uploaded data 
+* Submit multiple users in a single operation 
+* Download sample Excel template for reference 
+
+User Search & Filtering
+Users can be filtered using multiple criteria, including:
+* Employee ID 
+* Employee Name 
+* Department 
+* Designation 
+* Designation Category 
+* Project 
+* Team 
+* System Username 
+* Active Status 
+Multiple filters can be combined to quickly locate employee records.
+
+User Directory
+Displays all registered employees in a tabular format with details such as:
+* Employee ID 
+* Employee Name 
+* Email Address 
+* System Username 
+* Designation 
+* Designation Category 
+* Required Productive Hours 
+* Reporting Manager 
+* Department 
+* Team 
+* Project 
+* Shift 
+* Allotted Break Time 
+* User Status 
+
+User Update
+Administrators can edit existing employee information directly from the directory using the Edit action.
+
+Export
+Filtered or complete user records can be exported for reporting and administrative purposes.
+
+Access Control
+The User Directory is intended for administrative users responsible for employee onboarding and user management.
+Supported Role
+* Administrator – Can create single users, perform bulk user uploads, edit user information, filter records, and export the user directory.
+

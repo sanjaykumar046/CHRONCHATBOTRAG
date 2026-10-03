@@ -1,0 +1,59 @@
+Module Name
+Attendance
+Page Name
+Leave Management
+Overview
+The Leave Management page enables administrators and authorized managers to review, approve, reject, and monitor employee leave requests. Leave applications are organized by status, allowing users to quickly identify pending approvals, approved requests, and rejected or withdrawn applications. The page also provides a monthly view of leave records, displays employees currently on leave or scheduled to be on leave within the next seven days, and supports a structured approval workflow with comments for rejected requests. 
+Purpose
+The purpose of the Leave Management page is to provide a centralized interface for managing employee leave requests, ensuring timely approvals, transparent decision-making, and accurate leave tracking across the organization. 
+Features
+Leave Request Dashboard
+Displays leave applications categorized by status:
+* Pending Approval 
+* Approved 
+* Rejected / Withdrawn 
+Each category shows the total number of leave requests for the selected month. 
+Monthly Navigation
+Allows users to:
+* Navigate between previous and next months. 
+* View leave applications for the selected month. 
+* Automatically refresh leave records when the month changes. 
+Leave Approval Workflow
+Authorized users can:
+* Approve pending leave requests. 
+* Reject leave requests by providing a mandatory rejection reason. 
+* Automatically refresh the leave list after processing requests. 
+Leave Request Cards
+Each leave request displays:
+* Employee Name 
+* Employee ID 
+* Leave Duration 
+* From Date 
+* To Date 
+* Number of Leave Days 
+* Leave Type 
+* Leave Reason 
+* Leave Status 
+* Available Leave Balance 
+* Approval or Rejection Actions 
+* Approval Information for processed requests. 
+Status-Based Filtering
+Users can switch between:
+* Pending Approval 
+* Approved 
+* Rejected / Withdrawn 
+to quickly review leave requests by their current status. 
+Pagination
+Supports pagination for leave request cards, allowing users to navigate through multiple pages when a large number of leave applications are available. 
+Current and Upcoming Leave Summary
+Provides a sidebar displaying:
+* Employees currently on leave. 
+* Employees scheduled to be on leave within the next seven days. 
+This helps managers understand upcoming workforce availability. 
+Rejection Comments
+When rejecting a leave request, the approver must provide a rejection reason, which is stored and displayed with the leave application for future reference. 
+Role-Based Access
+The page supports role-based leave management:
+* Administrator – View all leave requests, approve or reject leave applications, monitor leave schedules, and manage the complete leave approval workflow. 
+* Leadership / Manager – Review and process leave requests assigned to them while monitoring employee leave schedules
+

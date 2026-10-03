@@ -1,0 +1,42 @@
+Module Name
+Attendance
+Page Name
+Dispute Approvals
+Overview
+The Dispute Approvals page enables administrators and leadership users to review attendance regularization requests submitted by employees. It provides a centralized interface for evaluating disputed attendance records, comparing the employee's current attendance status with the requested correction, and approving or rejecting the dispute. This workflow ensures attendance records remain accurate while maintaining an approval trail for all modifications. 
+Purpose
+The purpose of the Dispute Approvals page is to streamline the attendance dispute approval process by allowing authorized users to review, approve, or reject employee attendance correction requests before the attendance records are updated. 
+Features
+Pending Dispute List
+Displays all attendance disputes awaiting approval, including:
+* Employee ID 
+* Employee Name 
+* Work Date 
+* Current Attendance Status 
+* Requested Attendance Status 
+* Assigned Shift 
+* Dispute Submission Date 
+* Available Actions (Approve / Reject) 
+Attendance Status Comparison
+Allows approvers to compare:
+* Existing attendance status 
+* Requested attendance status submitted by the employee 
+This helps reviewers make informed approval decisions. 
+Approve Dispute
+Authorized users can approve a pending attendance dispute. Once approved:
+* The attendance correction is processed. 
+* The dispute is removed from the pending approval list. 
+* The approver receives a confirmation message. 
+Reject Dispute
+Approvers can reject a dispute request by providing a mandatory rejection reason. The rejection comments are stored with the dispute for audit and reference purposes. 
+Dispute Date Tracking
+Each dispute displays the date and time when the attendance correction request was submitted, allowing approvers to prioritize pending requests. 
+Real-Time Pending Count
+The navigation tab displays the number of pending attendance disputes, helping administrators quickly identify outstanding approvals. 
+Access Control
+The Dispute Approvals page is available only to authorized users with the appropriate roles.
+Supported Roles
+* Administrator 
+* Leadership 
+Only these roles can review, approve, or reject attendance dispute requests.
+

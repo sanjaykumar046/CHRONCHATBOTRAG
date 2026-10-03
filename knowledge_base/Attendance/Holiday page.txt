@@ -1,0 +1,46 @@
+Module Name
+Attendance
+Page Name
+Holidays
+Overview
+The Holidays page provides a centralized view of organization holidays and enables administrators to manage holiday data. Administrators can upload holiday lists using a CSV file, download a sample template, browse holidays by month, and view upcoming holidays. Employees can access the holiday calendar and upcoming holiday information, while holiday uploads are restricted to administrators. 
+Purpose
+The purpose of the Holidays page is to maintain an up-to-date organizational holiday calendar, simplify holiday management through bulk CSV uploads, and provide employees with visibility into current and upcoming holidays. 
+Features
+Holiday Calendar
+Displays holidays for the selected month, including:
+* Holiday Date 
+* Holiday Name 
+* Description 
+* Applicable Shift 
+Users can navigate between previous and next months to view holidays across the calendar year. 
+Upcoming Holidays
+Displays the upcoming holidays in chronological order, showing:
+* Holiday Name 
+* Holiday Date 
+* Applicable Shift 
+* Holiday Description (if available) 
+This allows employees to easily view upcoming organizational holidays. 
+Upload Holiday List
+Administrators can upload holiday information in bulk using a CSV file.
+The upload process includes:
+* CSV file selection 
+* File format validation 
+* Upload progress indication 
+* Success and error notifications 
+* Automatic refresh of the holiday calendar after successful upload 
+Download Sample CSV
+Administrators can download a sample CSV template containing the required format for holiday uploads before preparing holiday data. 
+CSV Validation
+The system validates uploaded files by:
+* Accepting only CSV files 
+* Displaying validation errors for invalid uploads 
+* Showing upload status messages after processing 
+Month Navigation
+Users can move between previous and next months to view holidays for different periods using built-in calendar navigation controls. 
+Access Control
+The Holiday Upload functionality is restricted to administrators.
+Supported Roles
+* Administrator – Can upload holiday CSV files, download sample templates, and view holiday information. 
+* Employees and other users – Can view the holiday calendar and upcoming holidays but cannot upload holiday data
+

@@ -1,0 +1,74 @@
+Module Name
+Controls
+Page Name
+Email Scheduler
+Overview
+The Email Report Scheduler page enables administrators to automate the delivery of reports through email. Reports can be scheduled to run at predefined intervals and sent to individual employees, multiple recipients, or role-based groups. The page also provides options to test, edit, delete, and review scheduled reports, ensuring timely distribution of workforce analytics and operational reports.
+
+Purpose
+The purpose of the Email Report Scheduler page is to simplify report distribution by allowing administrators to create automated email schedules, eliminating the need to manually generate and send recurring reports.
+
+Features
+Schedule List
+Displays all configured email schedules in a centralized table.
+Each schedule includes:
+* Report Type 
+* Target Employee ID 
+* Frequency 
+* Scheduled Send Time (IST) 
+* Recipient Type 
+* Recipient Email Addresses 
+* Schedule Status 
+* Last Sent Date and Time 
+* Next Scheduled Execution Time 
+
+Create Schedule
+Administrators can create a new email schedule by specifying:
+* Report Type 
+* Target Employee(s) 
+* Report Frequency (Daily, Weekly, Monthly, etc.) 
+* Scheduled Send Time 
+* Recipient Type 
+* Recipient Email Address(es) 
+* Schedule Status 
+Once saved, the report is automatically generated and delivered according to the configured schedule.
+
+Test Schedule
+Allows administrators to send a test email before activating the schedule.
+This helps verify:
+* Report generation 
+* Email delivery 
+* Recipient configuration 
+* Report formatting 
+
+Edit Schedule
+Existing schedules can be modified at any time.
+Administrators can update:
+* Report Type 
+* Frequency 
+* Send Time 
+* Recipients 
+* Status 
+Changes take effect for future scheduled executions.
+
+Delete Schedule
+Removes an existing email schedule from the system.
+Deleted schedules will no longer generate or send reports automatically.
+
+Schedule History
+The History option provides access to previously executed schedules and allows administrators to review report execution history, including report delivery information.
+
+Status Monitoring
+Each scheduled report displays its current execution status, such as:
+* Active 
+* Inactive 
+The page also displays:
+* Last Sent Time 
+* Next Scheduled Execution 
+to help administrators monitor scheduled report activity.
+
+Access Control
+The Email Report Scheduler page is intended for authorized administrative users responsible for report automation.
+Supported Role
+* Administrator – Can create, test, edit, delete, activate, deactivate, and monitor scheduled email reports, as well as review schedule history.
+

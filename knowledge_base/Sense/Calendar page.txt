@@ -1,0 +1,55 @@
+Page Name
+Calendar
+
+Module Name
+Sense
+
+Overview
+The Calendar page provides a monthly attendance view for employees by displaying the attendance status for each day within the selected month. It offers a complete day-wise attendance history, including attendance status, shift timings, total logged hours, regularisation attempts, leave requests, and attendance disputes in a calendar format.
+Users can navigate between months and filter attendance records by Employee ID to review attendance for a specific employee. Each calendar date displays the employee's attendance information, including Shift Timing, Total Logged Hours, and Attendance Status such as Present, Absent, Week Off, Half Day, Leave, Holiday, Home, Office, and Regularisation. The page also provides color-coded legends for quick identification of different attendance statuses. 
+In addition to viewing attendance, the Calendar page allows employees to perform attendance-related actions directly from the calendar. Employees can apply for leave on future dates, raise attendance disputes for incorrect attendance records, and view regularisation details for attendance corrections. Leadership and administrators can override attendance records when required, while employees can submit attendance disputes for approval. 
+The Calendar page is primarily used by employees, managers, leadership, HR, and administrators to monitor attendance history, verify attendance records, manage leave requests, submit attendance correction requests, and review monthly attendance activities from a single interface.
+
+Purpose
+The primary purpose of the Calendar page is to provide a centralized monthly attendance management system where employees and administrators can view, manage, and maintain attendance records.
+The page enables users to review daily attendance status, verify logged working hours, monitor shift schedules, apply for leave, raise attendance disputes, review regularisation attempts, and track attendance history for the selected month. It simplifies attendance management by combining attendance visualization and attendance-related actions into a single calendar interface, helping organizations maintain accurate attendance records and streamline leave and attendance correction processes.
+
+
+
+Features
+* Displays employee attendance in a monthly calendar view. 
+* Allows navigation between previous and next months to view historical attendance records. 
+* Supports filtering attendance records by Employee ID and selected month. 
+* Displays daily attendance information, including: 
+o Shift Timing 
+o Total Logged Hours 
+o Attendance Status 
+o Regularisation Attempts (if available) 
+* Displays attendance status using color-coded badges for: 
+o Present 
+o Absent 
+o Week Off 
+o Half Day 
+o Leave 
+o Holiday 
+o Home 
+o Office 
+o Regularisation 
+* Provides a Regularisation Details popup showing: 
+o Number of regularisation attempts 
+o Attendance status 
+o Update type 
+o Updated by 
+o Comments 
+* Allows employees to apply for leave directly from any applicable calendar date by providing: 
+o Leave Type 
+o From Date 
+o To Date 
+o Total Days 
+o Reason 
+* Allows employees to raise attendance disputes for incorrect attendance records by submitting updated attendance details for approval. 
+* Allows Leadership and Administrators to override attendance records when authorized instead of creating a dispute request. 
+* Automatically calculates the total number of leave days during leave application based on the selected From Date and To Date. 
+* Retrieves attendance data for the selected month and employee from the attendance reporting procedure and updates the calendar dynamically. 
+* Displays loading indicators and validation messages while attendance data is being retrieved or attendance actions are being processed.
+

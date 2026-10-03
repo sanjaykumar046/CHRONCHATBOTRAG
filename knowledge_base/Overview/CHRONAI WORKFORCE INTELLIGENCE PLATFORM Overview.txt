@@ -1,0 +1,196 @@
+CHRONAI WORKFORCE INTELLIGENCE PLATFORM
+PROJECT OVERVIEW
+
+ABOUT THE PROJECT
+
+ChronAI Workforce Intelligence Platform is an AI-powered workforce intelligence and operational analytics solution designed to help organizations monitor, analyze, and improve workforce performance through intelligent dashboards, analytics, and real-time business insights.
+
+The platform provides a centralized environment where organizations can monitor employee activities, attendance, productivity, system usage, organizational performance, and operational trends. It transforms workforce data into meaningful insights that help managers and business leaders make informed decisions.
+
+By combining workforce analytics with artificial intelligence, the platform enables users to understand organizational performance, identify operational risks, monitor employee engagement, and receive intelligent recommendations based on business data.
+
+PROJECT PURPOSE
+
+The purpose of the ChronAI Workforce Intelligence Platform is to provide organizations with complete visibility into workforce operations through a unified and intelligent system.
+
+The platform helps organizations:
+
+• Monitor workforce activities
+• Analyze employee productivity
+• Improve operational efficiency
+• Identify workforce trends
+• Detect operational risks
+• Support business decision-making
+• Enhance workforce visibility
+• Simplify organizational reporting
+• Deliver AI-powered workforce insights
+PROJECT OBJECTIVES
+
+The primary objectives of the platform are:
+
+• Provide a centralized workforce intelligence solution.
+• Deliver real-time operational insights.
+• Monitor workforce productivity and engagement.
+• Improve organizational visibility.
+• Support managers with intelligent decision-making.
+• Detect workforce anomalies and operational risks.
+• Reduce manual reporting through automated analytics.
+• Enable AI-assisted business analysis.
+
+PROJECT MODULES
+
+The platform consists of multiple business modules that work together to provide complete workforce intelligence.
+
+Sense
+The Sense module contains multiple pages that provide workforce analytics, employee activity monitoring, AI-generated insights, organizational visibility, and productivity analysis. Each page focuses on a specific aspect of workforce intelligence and helps users monitor employees, analyze trends, and make informed decisions.
+The AI Insights page provides AI-powered workforce analysis and intelligent business insights. It includes Live Alerts for important workforce events, HRMS Gap analysis to identify missing or incomplete workforce information, an AI Chat Bot for natural language interactions, Workforce Reports, Workforce Health Monitoring, Productivity Score analysis, Activity Score Analysis, Operational Risk Signals, Operational Insights, and AI Query Answers that respond to user questions based on available organizational data.
+The Pulse page provides a real-time overview of workforce activities and employee status. It displays the total employee count and week-wise monitoring charts for Logged Hours, Idle Hours, Away From System, Productive Hours, and Time on System. The page also includes a calendar for viewing daily attendance, a Shift Status table for monitoring employee shift timings, and a My Team section that allows managers to monitor their team members' profiles, attendance, and current work status.
+The Pattern page provides month-wise analysis of employee activity trends. It displays charts that compare Productive Hours and Idle Hours over a selected period, enabling users to identify productivity patterns and workforce behavior.
+The Snapshot page provides a detailed tabular view of employee activities. It allows users to review employee activity records and workforce-related information in a structured table format.
+The Aligned page provides department-wise workforce analysis. It displays metrics such as Logged Hours, Idle Hours, Away From System, Productive Hours, and Time on System for each department, helping managers compare workforce performance across organizational units.
+The Calendar page provides a monthly calendar view of employee attendance and leave activities. Users can view leave records, attendance information, apply for leave, request leave cancellation or reversal when applicable, and manage leave-related activities based on their permissions.
+The Org Chart page displays the organizational reporting hierarchy in a tree structure. It allows users to view their reporting manager, direct reports, and the organizational reporting relationships within the company.
+The Time on System page provides detailed information about employee system usage throughout the month. It helps users monitor the amount of time employees spend on the system and analyze their overall system utilization.
+
+Work Stream
+The Work Stream module provides detailed employee work activity monitoring and timeline analysis. It enables users to track workforce activities, analyze application usage, and monitor employee productivity over different time periods.
+The Daily Flow page provides a detailed view of employee activities for a selected day. It displays second-by-second activity timelines in a graphical format and summarizes key workforce metrics, including Logged Hours, Idle Hours, Away From System, Productive Hours, and Time on System. The page supports monitoring multiple employees for a single day and provides both visual and tabular representations of their activities.
+The Application Usage page displays the applications used by employees during a selected time period. It provides graphical insights into application usage, helping users understand which applications employees accessed and how their working time was distributed across different applications.
+The User Flow page provides a monthly view of an individual employee's work activities. Similar to the Daily Flow page, it displays activity timelines along with Logged Hours, Idle Hours, Away From System, Productive Hours, and Time on System. Users can filter and analyze activity data for a single employee over a period of up to 30 days to identify productivity patterns and work behavior trends.
+
+
+
+
+Performance
+The Performance module provides workforce performance analytics by identifying employees based on their productivity and work behavior. It helps managers and business leaders evaluate employee performance, recognize high-performing employees, identify low-performing employees, and monitor extended break activities.
+The module displays the Top 10 Productive Employees based on productivity metrics, allowing users to identify the highest-performing employees within the organization.
+It also displays the Bottom 10 Productive Employees, helping managers identify employees with lower productivity levels for further analysis and performance improvement.
+The module includes an Extended Break analysis that identifies employees who have taken longer or more frequent breaks than expected during the selected period.
+Performance information is presented in both graphical charts and tabular reports, enabling users to compare employee performance, analyze productivity trends, and review detailed performance data in an easy-to-understand format.
+
+Web Intelligence
+The Web Intelligence module provides comprehensive analysis of employee website usage across the organization. It helps organizations monitor browsing activities, understand website usage patterns, and evaluate whether employees are accessing productive, restricted, or non-productive websites.
+The module analyzes website usage for all employees and identifies the websites that are accessed most frequently and least frequently. This helps managers understand browsing behavior and evaluate how employees spend their time while using the system.
+The module categorizes websites into three classifications:
+* Productive websites 
+* Restricted websites 
+* Non-productive websites 
+It provides detailed insights into the websites most frequently accessed under each category, enabling organizations to monitor compliance with company policies and evaluate employee internet usage.
+Website usage information is presented in both graphical charts and tabular reports, allowing users to compare website usage trends, analyze browsing behavior, and review detailed website activity across the workforce.
+
+
+
+
+Attendance
+The Attendance module provides attendance and leave management features that help organizations monitor employee attendance, manage leave requests, process approvals, and maintain holiday information.
+The Attendance page provides an overview of the organization's attendance information. It displays the total employee count and maintains records of employee leave applications in a tabular format, allowing users to review attendance and leave-related information across the organization.
+The Leave Application page allows employees to apply for leave based on the organization's leave policies. Users can submit leave requests and view the status and history of their submitted leave applications in a table format.
+The Leave Management page is used by authorized users to review pending leave requests. Managers or administrators can approve or reject leave applications based on organizational policies and approval workflows.
+The Dispute Approval page is used to manage attendance correction requests. Employees can submit a dispute if their attendance or leave record is incorrect, such as when a working day is mistakenly marked as leave or an attendance entry is inaccurate. Authorized users can review these requests and approve or reject them after verification.
+The Holiday page is used to maintain the organization's holiday calendar. Authorized users can upload and manage holiday information, while employees can view the list of upcoming and existing holidays in a tabular format.
+
+Controls
+The Controls module provides administrative features for managing organizational configurations, employee information, website access policies, work shifts, and automated report distribution.
+The Website Access Manager page is used to manage website access policies across the organization. Authorized users can classify websites as Productive, Restricted, or Non-Productive to control employee website usage and enforce organizational internet access policies.
+The User Directory page is used to create, manage, and maintain employee records within the platform. Authorized users can add new employees, update employee information, and manage employee profiles required for workforce monitoring and reporting.
+The Shift Planner page is used to assign and manage employee work shifts. Administrators can create shift schedules, assign shifts to employees, and update shift allocations based on organizational requirements.
+The Email Scheduler page is used to automate the delivery of workforce reports through email. Authorized users can schedule and send monthly or custom reports to individual employees, multiple employees, reporting managers, administrators, or themselves. Reports are delivered to the specified recipients based on the selected schedule and reporting requirements.
+
+
+Support
+The Support module provides issue management and support features that help employees report application issues, manage approval workflows, and access platform guidance.
+The Raise an Issue page allows employees to report bugs, application errors, or feature-related issues encountered while using the platform. Employees can submit issue requests with the necessary details. Before an issue is forwarded to the development team, it must be reviewed and approved by the employee's Leadership through the approval workflow.
+The Issue Approver L1 page is used by Leadership users to review issue requests submitted by employees. Authorized users can approve or reject requests based on the reported issue. Approved requests are forwarded to the next stage for further processing.
+The All Issues page provides a centralized view of all issue requests submitted across the organization. This page is primarily used by administrators to monitor issue requests, review their progress, update issue statuses, and manage the overall issue resolution process.
+The Chron Help page serves as the platform's help and guidance section. It provides users with information about application features, module usage, workflows, and other reference materials to help them effectively use the ChronAI Workforce Intelligence Platform.
+
+Chron Control
+The Chron Control module provides centralized governance and administrative controls for managing the AI assistant. It enables authorized users to configure AI behavior, define governance policies, and enforce guardrails to ensure the chatbot operates securely, consistently, and in accordance with organizational requirements.
+The module includes governance and guardrail management features that allow administrators to control how the AI assistant processes user requests, generates responses, and interacts with organizational data. These controls help maintain response quality, enforce business rules, protect sensitive information, and ensure the AI operates within the organization's defined policies and access permissions.
+
+
+
+
+
+
+
+
+
+
+PRIMARY USER ROLES
+
+The platform supports role-based access to ensure users can only access information relevant to their responsibilities.
+
+ADMIN
+
+Administrators have organization-wide access to monitor workforce operations, manage system settings, configure platform features, review analytics, and oversee organizational performance.
+
+LEADERSHIP
+
+Leadership users, such as managers and department heads, can monitor their teams, review productivity, analyze workforce trends, and access reports related to their assigned organizational scope.
+
+EXECUTIVE
+
+Executive users can access their own workforce information, productivity details, attendance records, performance insights, and other information permitted by organizational policies.
+
+
+
+
+
+
+
+
+
+
+
+
+
+KEY FEATURES
+
+• AI-powered workforce intelligence
+• Interactive dashboards
+• Workforce analytics
+• Employee productivity analysis
+• Attendance insights
+• Organizational analytics
+• Work activity monitoring
+• Website intelligence
+• Operational risk detection
+• Real-time alerts
+• Trend analysis
+• Performance monitoring
+• AI-generated recommendations
+• Intelligent question answering
+• Visual reports and analytics
+
+BENEFITS
+
+The ChronAI Workforce Intelligence Platform helps organizations improve workforce management by providing accurate analytics, intelligent insights, and real-time operational visibility.
+
+Major benefits include:
+
+• Better workforce visibility
+• Improved productivity monitoring
+• Faster business decision-making
+• Early identification of operational risks
+• Intelligent workforce analysis
+• Reduced manual reporting effort
+• Enhanced organizational planning
+• Data-driven management decisions
+• Centralized workforce intelligence
+
+ROLE-BASED ACCESS
+
+The platform follows a role-based access model to ensure data security and controlled information sharing.
+
+Users can only access the modules, dashboards, reports, analytics, and AI responses that are authorized for their assigned role. This ensures that sensitive organizational information is available only to users with appropriate permissions.
+
+AI CAPABILITIES
+
+The platform includes an AI-powered assistant that helps users understand workforce data through natural language interactions.
+
+Users can ask business-related questions about workforce analytics, productivity, attendance, operational insights, organizational trends, and other supported topics. The AI assistant provides contextual responses based on available business data and organizational knowledge.
+
+CONCLUSION
+
+ChronAI Workforce Intelligence Platform is a comprehensive workforce intelligence solution that combines analytics, artificial intelligence, operational monitoring, and business insights into a single platform. It enables organizations to monitor workforce performance, improve operational efficiency, support informed decision-making, and enhance overall organizational productivity through intelligent, data-driven insights.

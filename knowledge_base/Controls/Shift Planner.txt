@@ -1,0 +1,82 @@
+Module Name
+Controls
+Page Name
+Shift Planner 
+Overview
+The Shifts page is used to assign, manage, and maintain employee work shifts. Administrators can assign shifts to employees, modify existing shift schedules, remove assigned shifts, and identify employees who have not yet been assigned a shift. The page also provides filtering options to quickly locate shift assignments based on employee and organizational information.
+
+Purpose
+The purpose of the Shifts page is to centrally manage employee shift schedules, ensuring that every employee is assigned an appropriate work shift while providing administrators with tools to create, update, delete, and monitor shift assignments.
+
+Features
+Shift Filters
+Allows administrators to filter shift records using one or more of the following criteria:
+* Employee ID 
+* Employee Name 
+* Department 
+* Shift 
+* Designation 
+* Project 
+* Team 
+* Date Range 
+The selected filters can be applied or reset at any time.
+
+Assigned Shift Table
+Displays all employees who have assigned shifts within the selected date range.
+The table includes information such as:
+* Employee ID 
+* Employee Name 
+* System User Name 
+* Shift Type 
+* Shift Start Time 
+* Shift End Time 
+* Shift Start Date 
+* Shift End Date 
+* Time Zone 
+* Week Off 
+* Comments 
+* Updated By 
+Each record provides actions to:
+* Edit an existing shift assignment 
+* Delete a shift assignment 
+
+Add Shift
+Administrators can create a new shift assignment for an employee.
+The shift creation form includes:
+* Employee ID 
+* Employee Name (Auto-filled) 
+* System User Name (Auto-filled) 
+* Shift Type (Day/Night) 
+* Shift Start Time 
+* Shift End Time 
+* Shift Start Date 
+* Shift End Date 
+* Time Zone 
+* Week Off Selection 
+* Comments 
+* Updated By 
+The system validates mandatory fields before saving the shift assignment. 
+
+Employees Without Shift
+Displays employees who currently do not have an assigned shift.
+Administrators can directly assign a shift to these employees using the Assign action. 
+
+Edit Shift
+Existing shift assignments can be modified to update:
+* Shift Type 
+* Shift Timing 
+* Shift Duration 
+* Week Off 
+* Time Zone 
+* Comments 
+The updated information is saved to the employee's shift schedule. 
+
+Delete Shift
+Administrators can remove an existing shift assignment.
+Before deletion, the system displays a confirmation dialog to prevent accidental removal. 
+
+Access Control
+The Shifts page is intended for administrative users responsible for workforce scheduling.
+Supported Role
+* Administrator – Can assign shifts, edit shift details, delete shift assignments, manage employees without shifts, and filter shift records.
+

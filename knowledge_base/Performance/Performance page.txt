@@ -1,0 +1,56 @@
+Page Name
+Performance
+
+Module Name
+Performance
+
+Overview
+The Power Users page provides a performance-focused analysis of employee productivity over a selected date range. It helps managers, administrators, and leadership identify employees who consistently demonstrate high productivity, employees requiring performance improvement, and employees with excessive break durations.
+Users can filter the report using Employee ID, Employee Name, Department, Designation, Designation Category, Project, Shift, Team, and Date Range. Based on the selected filters, the system retrieves employee productivity information and calculates average productivity metrics across the selected period. 
+The dashboard presents three visual summaries:
+* Top 10 Productive Users (Average) showing employees with the highest average productive working hours. 
+* Bottom 10 Least Productive Users (Average) highlighting employees with the lowest average productive working hours. 
+* Exceeded Break Time (Average) displaying employees with the highest average break time percentage compared to their logged working hours. 
+The page also provides two detailed tables:
+* Top 10 Productive Users 
+* Bottom 10 Focus-Required Users 
+Each table includes employee information, average productive hours, average logged hours, average exceeded break time, department, team, and the number of activity records used to calculate the averages. 
+This dashboard enables organizations to recognize high-performing employees, identify users requiring attention, monitor excessive break behavior, and support performance improvement initiatives using data-driven workforce analytics.
+
+Purpose
+The primary purpose of the Power Users page is to measure employee productivity over a selected reporting period and identify the highest-performing as well as least productive employees based on average productive working hours.
+The dashboard helps managers monitor workforce performance, recognize consistently productive employees, identify employees requiring coaching, analyze break behavior, and support informed performance management decisions through summarized productivity metrics and visual analytics.
+
+Features
+* Displays employee productivity analysis for the selected reporting period. 
+* Supports filtering using: 
+o Employee ID 
+o Employee Name 
+o Department 
+o Designation 
+o Designation Category 
+o Project 
+o Shift 
+o Team 
+o Date Range 
+* Provides Filter functionality to generate productivity reports based on selected filters. 
+* Provides Reset functionality to clear all filters and restore the default view. 
+* Calculates average productivity metrics across the selected reporting period before presenting the results. 
+* Displays the Top 10 Productive Users (Average) chart based on average productive working hours. 
+* Displays the Bottom 10 Least Productive Users (Average) chart highlighting employees requiring performance improvement. 
+* Displays the Exceeded Break Time (Average) pie chart showing employees with the highest average exceeded break percentages. 
+* Presents a detailed Top 10 Productive Users table containing: 
+o Employee ID 
+o Employee Name 
+o Average Productive Hours 
+o Average Logged Hours 
+o Average Exceeded Break Time 
+o Department 
+o Team 
+o Number of Entries Averaged 
+* Presents a detailed Bottom 10 Focus-Required Users table with the same performance metrics for employees having the lowest average productivity. 
+* Automatically averages multiple employee activity records within the selected date range to produce summarized performance statistics rather than displaying individual daily records. 
+* Supports CSV export for productivity reports and summarized employee performance information. 
+* Displays loading indicators, validation messages, and error notifications during report generation. 
+* Uses session-based caching to improve performance and reduce repeated data retrieval for previously executed filters. 
+

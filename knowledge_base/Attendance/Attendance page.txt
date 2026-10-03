@@ -1,0 +1,72 @@
+Module Name
+Attendance
+Page Name
+Attendance
+Overview
+The Attendance page provides a centralized view of employee attendance records for a selected date range. It enables administrators, leadership, and authorized users to monitor daily attendance, review attendance statistics, track employee work details, and manage attendance-related activities from a single interface. The page displays summary statistics, attendance distribution, and a detailed attendance table containing employee attendance information such as shift details, attendance status, work time, regularization attempts, dispute status, and available actions. It also supports attendance filtering, attendance disputes, attendance overrides, and data export, helping organizations maintain accurate attendance records and streamline attendance management processes. 
+Purpose
+The purpose of the Attendance page is to provide a centralized platform for monitoring and managing employee attendance across the organization. It enables users to view attendance statistics, monitor employee attendance status, review work schedules, manage attendance disputes, perform attendance overrides, and maintain accurate attendance records. The page helps improve attendance tracking, simplify attendance administration, and support effective workforce management through a single unified interface. 
+Features
+Attendance Statistics
+Displays attendance summary for the selected date range, including:
+* Total Employees 
+* Present 
+* Absent 
+* Half Day 
+* Week Off 
+* Holiday Worked 
+* Holiday 
+* Leave 
+The statistics are displayed using summary cards and a circular visualization for quick analysis. 
+Date Range Filter
+Allows users to:
+* Select a custom date range. 
+* Filter attendance records. 
+* Reset applied filters. 
+* Export attendance data. 
+Attendance Records
+Displays detailed employee attendance information, including:
+* Employee ID 
+* Employee Name 
+* Shift 
+* Shift Timing 
+* Attendance Status 
+* Work Time 
+* Regularization Attempts 
+* Dispute Status 
+* Available Actions 
+The table supports pagination and configurable page size for efficient record management. 
+Attendance Status Management
+Supports the following attendance statuses:
+* Present 
+* Absent 
+* Half Day 
+* Week Off 
+* Holiday Worked 
+* Holiday 
+* Leave 
+Attendance Dispute
+Authorized users can:
+* Raise attendance disputes. 
+* Request attendance corrections. 
+* Modify shift details while submitting disputes. 
+* Withdraw pending disputes. 
+* Track dispute status. 
+Attendance Override
+Administrators and Leadership users can:
+* Edit attendance records. 
+* Override attendance status. 
+* Update employee shift information. 
+* Save attendance changes directly. 
+Dispute Approval
+Leadership and Administrators can:
+* View pending attendance disputes. 
+* Approve attendance correction requests. 
+* Reject disputes with comments. 
+* Review dispute details before taking action. 
+Role-Based Access
+Attendance operations are controlled based on user roles.
+* Admin – Full attendance management, attendance override, and dispute approval. 
+* Leadership – Attendance monitoring and dispute approval. 
+* Executive – Attendance viewing based on assigned permissions.
+

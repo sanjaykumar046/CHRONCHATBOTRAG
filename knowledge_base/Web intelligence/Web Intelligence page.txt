@@ -1,0 +1,56 @@
+Page Name
+Web Intelligence
+
+Module Name
+Web Intelligence
+
+Overview
+The Website Usage page provides a comprehensive analysis of employees' website browsing activities within the selected reporting period. It enables managers, administrators, and leadership teams to monitor how employees spend their time across different websites and classify website usage into Productive, Non-Productive, and Restricted categories.
+Users can filter the report using Employee ID, Employee Name, Department, Project, Team, and Date Range. Based on the selected filters, the system retrieves website activity records and presents both graphical analytics and detailed tabular information.
+The dashboard includes a Dynamic Utilization chart that illustrates the overall distribution of website usage by category, helping users understand the proportion of productive, non-productive, and restricted browsing. A Top 10 Websites by Time Spent chart highlights the websites where employees have spent the most time during the selected period.
+The page also generates Insights, Observations, and Alerts based on the analyzed website activity to help managers identify productivity trends, unusual browsing behavior, or policy violations. A detailed activity table lists every recorded website session along with employee details, website name, browsing duration, and website category, enabling deeper analysis and auditing.
+This page supports organizations in monitoring internet usage, improving employee productivity, enforcing browsing policies, identifying high-risk website usage, and making informed workforce management decisions.
+
+Purpose
+The primary purpose of the Website Usage page is to provide visibility into employees' website browsing behavior during a selected time period. It helps organizations evaluate how employee working hours are distributed across productive, non-productive, and restricted websites.
+The page enables managers and administrators to monitor internet usage patterns, identify productivity opportunities, detect policy violations, analyze browsing trends, and make data-driven decisions to improve operational efficiency while ensuring compliance with organizational internet usage policies.
+
+
+
+Features
+* Displays employee website usage analytics for the selected reporting period. 
+* Supports filtering using: 
+o Employee ID 
+o Employee Name 
+o Department 
+o Project 
+o Team 
+o Date Range 
+* Provides Filter functionality to generate the Website Usage report based on selected filters. 
+* Provides Reset functionality to clear all filters and restore the default dashboard. 
+* Supports exporting website usage records for reporting and offline analysis. 
+* Displays a Dynamic Utilization chart showing the percentage distribution of: 
+o Productive Websites 
+o Non-Productive Websites 
+o Restricted Websites 
+* Displays the Top 10 Websites by Time Spent chart, allowing users to identify websites with the highest usage duration during the selected period. 
+* Generates automated Insights based on analyzed website usage patterns. 
+* Displays Observations summarizing employee browsing behavior and utilization trends. 
+* Generates Alerts for significant browsing activities, such as excessive non-productive or restricted website usage. 
+* Displays a detailed website activity table containing: 
+o Activity Date 
+o Employee ID 
+o Employee Name 
+o Team 
+o Department 
+o Website Name 
+o Browsing Duration 
+o Website Category 
+* Categorizes each website activity into: 
+o Productive 
+o Non-Productive 
+o Restricted 
+* Supports sorting and pagination for efficient navigation through large volumes of website activity records. 
+* Retrieves website usage information dynamically based on the selected filters and refreshes the dashboard accordingly. 
+* Displays loading indicators, validation messages, and empty-state messages to provide a smooth and responsive user experience. 
+

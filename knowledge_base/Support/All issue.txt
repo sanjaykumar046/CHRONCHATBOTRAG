@@ -1,0 +1,83 @@
+Module Name
+Support
+Page Name
+All Issue
+
+Overview
+The Issue Approver – Admin page provides administrators with a centralized dashboard to view, manage, and track all issues raised across the CHRON AI application. Administrators can review issue details, monitor issue progress, update issue status, and oversee the complete issue lifecycle from submission to closure. The page includes summary statistics, search and filtering capabilities, and status management to ensure efficient issue tracking and resolution. 
+
+Purpose
+The purpose of the Issue Approver – Admin page is to enable administrators to monitor all reported issues, manage their workflow, update issue statuses, and ensure that issues are tracked until they are resolved and closed.
+
+Features
+Issue Dashboard
+Displays real-time statistics for all reported issues, including:
+* Total Issues 
+* Pending Issues 
+* Acknowledged Issues 
+* In Progress Issues 
+* Resolved Issues 
+The dashboard provides a quick overview of the current issue workload and status distribution. 
+
+Issue List
+Displays all reported issues in a tabular format with information such as:
+* Issue Title 
+* Raised By 
+* Menu / Page 
+* Number of Impacted Users 
+* Priority 
+* Current Status 
+* Client 
+* Created Date 
+Each issue includes a View action for reviewing detailed information. 
+
+Search and Filters
+Administrators can quickly locate issues using:
+* Issue Title Search 
+* Employee Search 
+* Status Filter 
+* Priority Filter 
+* Client Filter 
+A Clear option is also available to reset all applied filters. 
+
+View Issue Details
+Selecting an issue opens a detailed view containing:
+* Issue ID 
+* Raised By 
+* Issue Title 
+* Menu 
+* Page 
+* Description 
+* Priority 
+* Number of Impacted Users 
+* Client Information 
+* Current Status 
+* Created Date 
+This allows administrators to fully review the issue before updating its status. 
+
+
+Update Issue Status
+Administrators can update the issue through various stages, including:
+* Open 
+* Acknowledged 
+* In Progress 
+* Finished 
+* Closed 
+Status updates help track the progress of issue resolution throughout its lifecycle. 
+
+Refresh Data
+The Refresh option reloads the latest issue information from the system, ensuring administrators always view the most up-to-date issue status. 
+
+Issue Workflow
+1. A user submits an issue through the Raise Issue page. 
+2. Leadership reviews and approves the issue. 
+3. The approved issue becomes available in the Issue Approver – Admin page. 
+4. Administrators review the issue details. 
+5. The issue status is updated as work progresses. 
+6. Once the Development Team completes the fix, the issue is marked as Finished and eventually Closed. 
+
+Access Control
+The Issue Approver – Admin page is intended for administrative users responsible for overseeing issue management.
+Supported Role
+* Administrator – Can view all reported issues, search and filter issues, review issue details, update issue status, monitor issue progress, and manage the complete issue lifecycle.
+

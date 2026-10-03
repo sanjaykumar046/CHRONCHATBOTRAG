@@ -1,0 +1,31 @@
+Page Name
+Pattern
+
+Module Name
+Sense
+
+Overview
+The Pattern page provides a month-wise analysis of employee productivity patterns by comparing Productive Hours and Idle Hours for each day within the selected month. It enables users to identify work patterns, productivity trends, and daily variations across the reporting period.
+The page presents the information through a stacked column chart, where each column represents a single day of the selected month. The chart displays the average Productive Hours and Idle Hours of employees after applying the selected filters, making it easy to compare daily workforce performance throughout the month. 
+Users can filter the report using Employee ID, Employee Name, Department, Designation, Designation Category, Project, Shift, Team, Month, and Year. After applying the filters, the system retrieves the corresponding monthly workforce activity data and updates the visualization accordingly. 
+Each bar in the chart is interactive. Selecting a specific day opens a detailed view containing employee-level activity records for that date, allowing users to perform detailed analysis without leaving the page. The detailed data can also be exported for reporting and further analysis. 
+The page is primarily used by Administrators and Leadership users to monitor workforce productivity trends, identify changes in employee working patterns, detect abnormal idle behaviour, compare daily performance, and support operational decision-making using historical monthly activity data.
+
+Purpose
+The primary purpose of the Pattern page is to help organizations analyze daily workforce productivity patterns over a selected month. It enables managers and administrators to monitor how Productive Hours and Idle Hours vary from day to day, identify consistent work trends, detect unusual productivity fluctuations, and evaluate workforce performance over time.
+The page supports historical analysis by presenting aggregated daily activity data in a visual format, making it easier to compare productivity across different dates. It also provides detailed employee-level information for any selected day, allowing users to investigate the factors contributing to productivity or idle time and make informed operational decisions based on historical workforce activity.
+
+
+
+Features
+The Pattern page provides the following features to support monthly workforce productivity analysis:
+* Displays a month-wise stacked column chart showing the average Productive Hours and Idle Hours for each day within the selected month. 
+* Visualizes daily productivity trends, enabling users to compare workforce performance across different dates within the reporting period. 
+* Allows filtering of data using multiple criteria, including Employee ID, Employee Name, Department, Designation, Designation Category, Project, Shift, Team, Month, and Year, enabling customized workforce analysis. 
+* Retrieves aggregated workforce activity data based on the selected filters and displays the average daily Productive Hours and Idle Hours for all employees matching the filter criteria. 
+* Supports interactive chart analysis, where selecting any daily column opens a detailed employee-level activity report for the selected date. 
+* Displays detailed daily workforce records in a searchable and sortable tabular format, allowing users to analyze individual employee activity for the selected day. 
+* Provides column customization features that allow users to show or hide columns, resize column widths, and paginate large sets of columns for improved data analysis. 
+* Supports exporting the monthly report as a CSV file based on the currently applied filters. 
+* Supports exporting the detailed employee activity records for a selected day from the drill-down view as a CSV file for reporting and further analysis. 
+* Automatically loads the current month's data by default and allows users to refresh the report using the Filter option or restore the default selections using the Reset option.
