@@ -11,7 +11,8 @@ class ParameterService:
 
     Responsibilities
     ----------------
-    - Extract parameter values the user explicitly mentioned in the question
+    - Validate parameters extracted by the unified request-analysis call
+    - Retain standalone extraction for pending multi-field replies
     - Auto-inject parameters the system already knows (userid, action)
     - Resolve date-like parameters via DateResolver (never via LLM extraction -
       see DATE_PARAM_NAMES note below)
@@ -92,7 +93,6 @@ class ParameterService:
         "dateRange",
     }
 
-    _SELF_REFERENCE_WORDS = {"my", "me", "i", "mine", "myself"}
     _EMPLOYEE_ID_RE = re.compile(r"\b[A-Z]{2}\d{5}\b", re.IGNORECASE)
 
     def __init__(self):
@@ -166,8 +166,29 @@ class ParameterService:
         )
 
         result = self.classifier.classify(prompt, fallback={})
+        return self._sanitize_extracted(question, param_names, result, user)
+
+    def _sanitize_extracted(
+        self,
+        question: str,
+        param_names: list,
+        result: dict,
+        user: dict = None,
+        evidence_question: str = None,
+        source_question: str = None,
+    ) -> dict:
         if not isinstance(result, dict):
             return {}
+
+        evidence_question = evidence_question or question
+        source_question = source_question or question
+
+        allowed_names = set(param_names)
+        result = {
+            key: value
+            for key, value in result.items()
+            if key in allowed_names
+        }
 
         # Replace __SELF__ with the actual logged-in userid, wherever
         # it shows up - the LLM now writes it under the real registry
@@ -192,13 +213,28 @@ class ParameterService:
         # use the authenticated user for self-references or omit the filter.
         identity_param = self._guess_identity_param(param_names)
         if identity_param:
-            explicit_ids = list(dict.fromkeys(
+            current_ids = list(dict.fromkeys(
                 match.group(0)
-                for match in self._EMPLOYEE_ID_RE.finditer(question)
+                for match in self._EMPLOYEE_ID_RE.finditer(source_question)
             ))
-            if explicit_ids:
-                result[identity_param] = ", ".join(explicit_ids)
-            elif self._has_self_reference(question):
+            evidence_ids = list(dict.fromkeys(
+                match.group(0)
+                for match in self._EMPLOYEE_ID_RE.finditer(evidence_question)
+            ))
+            if current_ids:
+                result[identity_param] = ", ".join(current_ids)
+            elif self._has_self_reference(source_question):
+                userid = (user or {}).get("userid")
+                if userid:
+                    result[identity_param] = userid
+                else:
+                    result.pop(identity_param, None)
+            elif evidence_ids and evidence_question != source_question:
+                result[identity_param] = ", ".join(evidence_ids)
+            elif self._has_self_reference(question) or (
+                evidence_question != source_question
+                and self._has_self_reference(evidence_question)
+            ):
                 userid = (user or {}).get("userid")
                 if userid:
                     result[identity_param] = userid
@@ -223,11 +259,14 @@ class ParameterService:
         # finds) since it's always in extractable_names_for_llm even
         # when the registry itself never declared an identity field -
         # see the comment in resolve() for why that safety net exists.
-        if self._has_self_reference(question):
+        if self._has_self_reference(source_question) or (
+            evidence_question != source_question
+            and self._has_self_reference(evidence_question)
+        ):
             userid = (user or {}).get("userid")
             if userid:
                 identity_param = self._guess_identity_param(param_names)
-                if identity_param and not self._EMPLOYEE_ID_RE.search(question):
+                if identity_param and not self._EMPLOYEE_ID_RE.search(evidence_question):
                     result[identity_param] = userid
 
         return result
@@ -240,7 +279,15 @@ class ParameterService:
         """
         return self._extract_from_question(question, parameter_names, user)
 
-    def resolve(self, question: str, registry: dict, user: dict = None) -> dict:
+    def resolve(
+        self,
+        question: str,
+        registry: dict,
+        user: dict = None,
+        extracted: dict = None,
+        evidence_question: str = None,
+        source_question: str = None,
+    ) -> dict:
         """
         Returns:
             {"status": "success", "parameters": {...}}
@@ -274,7 +321,17 @@ class ParameterService:
         ]
         extractable_names_for_llm = extractable_names
 
-        extracted = self._extract_from_question(question, extractable_names_for_llm, user)
+        if extracted is None:
+            extracted = self._extract_from_question(question, extractable_names_for_llm, user)
+        else:
+            extracted = self._sanitize_extracted(
+                question,
+                extractable_names_for_llm,
+                extracted,
+                user,
+                evidence_question=evidence_question,
+                source_question=source_question,
+            )
 
         # ---------------------------------------------------------
         # Auto-inject known system values

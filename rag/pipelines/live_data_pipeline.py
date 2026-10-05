@@ -1,6 +1,5 @@
 from datetime import date
 
-from rag.services.question_analyzer import QuestionAnalyzer
 from rag.services.parameter_service import ParameterService
 from rag.services.api_service import APIService
 from rag.services.response_service import ResponseService
@@ -11,7 +10,6 @@ from rag.services.rbac_service import RbacService
 class LiveDataPipeline:
 
     def __init__(self):
-        self.question_analyzer = QuestionAnalyzer()
         self.parameter_service = ParameterService()
         self.api_service = APIService()
         self.response_service = ResponseService()
@@ -40,6 +38,7 @@ class LiveDataPipeline:
 
         session_id = request.get("session_id")
         userid = (user or {}).get("userid")
+        response_mode = "narrative"
 
         # ---------------------------------------------
         # Check for a pending ASK_USER context first.
@@ -66,20 +65,21 @@ class LiveDataPipeline:
             parameters = merged
 
         else:
-            # ---------------------------------------------
-            # Stage 1 - Analyze Question (LLM intent + registry lookup)
-            # ---------------------------------------------
-            analysis = self.question_analyzer.analyze(question)
-
-            if analysis["status"] != "success":
-                return analysis
+            # RequestAnalysisService already selected and validated the
+            # registry entry in the single pre-fetch LLM call.
+            analysis = request.get("_request_analysis")
+            if not isinstance(analysis, dict) or not isinstance(analysis.get("registry"), dict):
+                return {
+                    "status": "error",
+                    "message": "Live-data analysis is missing a validated registry entry.",
+                }
 
             registry_entry = analysis["registry"]
+            response_mode = analysis.get("response_mode", "narrative")
 
             # ---------------------------------------------
-            # RBAC Check - before spending an LLM call on
-            # parameter extraction for an intent the user
-            # isn't allowed to use.
+            # Enforce intent-level permissions before parameter resolution
+            # and before contacting the backend API.
             # ---------------------------------------------
             rbac_result = self.rbac_service.check(user, registry_entry)
             if rbac_result["status"] != "success":
@@ -91,7 +91,10 @@ class LiveDataPipeline:
             params_result = self.parameter_service.resolve(
                 question=question,
                 registry=registry_entry,
-                user=user
+                user=user,
+                extracted=analysis.get("parameters", {}),
+                evidence_question=analysis.get("parameter_evidence", question),
+                source_question=analysis.get("source_question", question),
             )
 
             if params_result["status"] != "success":
@@ -231,7 +234,9 @@ class LiveDataPipeline:
         result = self.response_service.generate(
             question=question,
             api_response=api_result["data"],
-            intent=registry_entry.get("Intent Name")
+            intent=registry_entry.get("Intent Name"),
+            response_metrics=registry_entry.get("Response Metrics"),
+            direct_metric=response_mode == "direct_metric",
         )
 
         t3 = time.time()

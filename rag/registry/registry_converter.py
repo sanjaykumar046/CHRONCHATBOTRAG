@@ -14,6 +14,25 @@ def convert():
 
     df = pd.read_excel(EXCEL_FILE)
 
+    # Excel stores complex registry metadata as JSON text in a cell. Restore
+    # those cells to native JSON values in the generated registry.
+    metadata_columns = [
+        column for column in df.columns
+        if str(column).endswith(" Metrics")
+    ]
+    for column in metadata_columns:
+        def parse_metadata(value):
+            if not isinstance(value, str) or not value.strip():
+                return ""
+            try:
+                return json.loads(value)
+            except json.JSONDecodeError as exc:
+                raise ValueError(
+                    f"Invalid JSON in Excel registry column '{column}': {exc}"
+                ) from exc
+
+        df[column] = df[column].map(parse_metadata)
+
     records = df.fillna("").to_dict(orient="records")
 
     with open(JSON_FILE, "w", encoding="utf-8") as file:

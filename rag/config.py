@@ -61,6 +61,10 @@ SIMILARITY_SCORE = float(
     os.getenv("SIMILARITY_SCORE", 0.75)
 )
 
+REGISTRY_CANDIDATE_COUNT = int(
+    os.getenv("REGISTRY_CANDIDATE_COUNT", 8)
+)
+
 # ==========================================================
 # Embedding Configuration
 # ==========================================================

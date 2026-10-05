@@ -12,7 +12,62 @@
         "PHP Action": "",
         "Procedure": "PR_EMPLOYEE_ACTIVITY_FLAT",
         "Roles": "ADMIN, EXECUTIVE",
-        "Notes": "dateRange must be nested object {start, end}. ids=employee ID filter. userid=viewer (auto-injected). Default reportType=GROUP_REPORT"
+        "Notes": "dateRange must be nested object {start, end}. ids=employee ID filter. userid=viewer (auto-injected). Default reportType=GROUP_REPORT",
+        "Response Metrics": [
+            {
+                "label": "Logged hours",
+                "matches": [
+                    "logged hours",
+                    "hours logged",
+                    "logged time"
+                ],
+                "path": "data1.*.TotalLoggedHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Productive hours",
+                "matches": [
+                    "productive hours",
+                    "productive time"
+                ],
+                "path": "data1.*.TotalProductiveHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Idle hours",
+                "matches": [
+                    "idle hours",
+                    "idle time"
+                ],
+                "path": "data1.*.TotalIdleHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Time on system",
+                "matches": [
+                    "time on system",
+                    "on-system hours",
+                    "on system hours"
+                ],
+                "path": "data1.*.TOTAL_ON_SYSTEM",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Time away from system",
+                "matches": [
+                    "time away from system",
+                    "away-from-system hours",
+                    "away from system hours"
+                ],
+                "path": "data1.*.AwayFromSystem",
+                "aggregation": "sum",
+                "format": "duration"
+            }
+        ]
     },
     {
         "Intent Name": "employee_activity_filter",
@@ -27,7 +82,62 @@
         "PHP Action": "",
         "Procedure": "PR_EMPLOYEE_ACTIVITY_FLAT",
         "Roles": "ADMIN, EXECUTIVE",
-        "Notes": "No specific employee required. Filter by org dimensions."
+        "Notes": "No specific employee required. Filter by org dimensions.",
+        "Response Metrics": [
+            {
+                "label": "Logged hours",
+                "matches": [
+                    "logged hours",
+                    "hours logged",
+                    "logged time"
+                ],
+                "path": "data1.*.TotalLoggedHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Productive hours",
+                "matches": [
+                    "productive hours",
+                    "productive time"
+                ],
+                "path": "data1.*.TotalProductiveHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Idle hours",
+                "matches": [
+                    "idle hours",
+                    "idle time"
+                ],
+                "path": "data1.*.TotalIdleHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Time on system",
+                "matches": [
+                    "time on system",
+                    "on-system hours",
+                    "on system hours"
+                ],
+                "path": "data1.*.TOTAL_ON_SYSTEM",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Time away from system",
+                "matches": [
+                    "time away from system",
+                    "away-from-system hours",
+                    "away from system hours"
+                ],
+                "path": "data1.*.AwayFromSystem",
+                "aggregation": "sum",
+                "format": "duration"
+            }
+        ]
     },
     {
         "Intent Name": "employee_productivity_report",
@@ -42,7 +152,62 @@
         "PHP Action": "",
         "Procedure": "PR_EMPLOYEE_ACTIVITY_FLAT",
         "Roles": "ADMIN, EXECUTIVE",
-        "Notes": "Same endpoint as activity summary. reportType=GROUP_REPORT"
+        "Notes": "Same endpoint as activity summary. reportType=GROUP_REPORT",
+        "Response Metrics": [
+            {
+                "label": "Logged hours",
+                "matches": [
+                    "logged hours",
+                    "hours logged",
+                    "logged time"
+                ],
+                "path": "data1.*.TotalLoggedHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Productive hours",
+                "matches": [
+                    "productive hours",
+                    "productive time"
+                ],
+                "path": "data1.*.TotalProductiveHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Idle hours",
+                "matches": [
+                    "idle hours",
+                    "idle time"
+                ],
+                "path": "data1.*.TotalIdleHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Time on system",
+                "matches": [
+                    "time on system",
+                    "on-system hours",
+                    "on system hours"
+                ],
+                "path": "data1.*.TOTAL_ON_SYSTEM",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Time away from system",
+                "matches": [
+                    "time away from system",
+                    "away-from-system hours",
+                    "away from system hours"
+                ],
+                "path": "data1.*.AwayFromSystem",
+                "aggregation": "sum",
+                "format": "duration"
+            }
+        ]
     },
     {
         "Intent Name": "weekly_export_report",
@@ -57,7 +222,62 @@
         "PHP Action": "",
         "Procedure": "PR_EMPLOYEE_ACTIVITY_FLAT",
         "Roles": "ADMIN, EXECUTIVE",
-        "Notes": "reportType should be WEEKLY_EXPORT"
+        "Notes": "reportType should be WEEKLY_EXPORT",
+        "Response Metrics": [
+            {
+                "label": "Logged hours",
+                "matches": [
+                    "logged hours",
+                    "hours logged",
+                    "logged time"
+                ],
+                "path": "data1.*.TotalLoggedHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Productive hours",
+                "matches": [
+                    "productive hours",
+                    "productive time"
+                ],
+                "path": "data1.*.TotalProductiveHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Idle hours",
+                "matches": [
+                    "idle hours",
+                    "idle time"
+                ],
+                "path": "data1.*.TotalIdleHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Time on system",
+                "matches": [
+                    "time on system",
+                    "on-system hours",
+                    "on system hours"
+                ],
+                "path": "data1.*.TOTAL_ON_SYSTEM",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Time away from system",
+                "matches": [
+                    "time away from system",
+                    "away-from-system hours",
+                    "away from system hours"
+                ],
+                "path": "data1.*.AwayFromSystem",
+                "aggregation": "sum",
+                "format": "duration"
+            }
+        ]
     },
     {
         "Intent Name": "monthly_productivity_summary",
@@ -72,7 +292,62 @@
         "PHP Action": "",
         "Procedure": "PR_EMPLOYEE_ACTIVITY_FLAT",
         "Roles": "ADMIN, EXECUTIVE",
-        "Notes": "month=full name e.g. January. year=4-digit e.g. 2026. Both via GET query string."
+        "Notes": "month=full name e.g. January. year=4-digit e.g. 2026. Both via GET query string.",
+        "Response Metrics": [
+            {
+                "label": "Logged hours",
+                "matches": [
+                    "logged hours",
+                    "hours logged",
+                    "logged time"
+                ],
+                "path": "data12.*.TotalLoggedHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Productive hours",
+                "matches": [
+                    "productive hours",
+                    "productive time"
+                ],
+                "path": "data12.*.TotalProductiveHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Idle hours",
+                "matches": [
+                    "idle hours",
+                    "idle time"
+                ],
+                "path": "data12.*.TotalIdleHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Time on system",
+                "matches": [
+                    "time on system",
+                    "on-system hours",
+                    "on system hours"
+                ],
+                "path": "data12.*.TOTAL_ON_SYSTEM",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Time away from system",
+                "matches": [
+                    "time away from system",
+                    "away-from-system hours",
+                    "away from system hours"
+                ],
+                "path": "data12.*.AwayFromSystem",
+                "aggregation": "sum",
+                "format": "duration"
+            }
+        ]
     },
     {
         "Intent Name": "monthly_idle_analysis",
@@ -87,7 +362,62 @@
         "PHP Action": "",
         "Procedure": "PR_EMPLOYEE_ACTIVITY_FLAT",
         "Roles": "ADMIN, EXECUTIVE",
-        "Notes": "Same endpoint as monthly_productivity_summary"
+        "Notes": "Same endpoint as monthly_productivity_summary",
+        "Response Metrics": [
+            {
+                "label": "Logged hours",
+                "matches": [
+                    "logged hours",
+                    "hours logged",
+                    "logged time"
+                ],
+                "path": "data12.*.TotalLoggedHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Productive hours",
+                "matches": [
+                    "productive hours",
+                    "productive time"
+                ],
+                "path": "data12.*.TotalProductiveHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Idle hours",
+                "matches": [
+                    "idle hours",
+                    "idle time"
+                ],
+                "path": "data12.*.TotalIdleHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Time on system",
+                "matches": [
+                    "time on system",
+                    "on-system hours",
+                    "on system hours"
+                ],
+                "path": "data12.*.TOTAL_ON_SYSTEM",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Time away from system",
+                "matches": [
+                    "time away from system",
+                    "away-from-system hours",
+                    "away from system hours"
+                ],
+                "path": "data12.*.AwayFromSystem",
+                "aggregation": "sum",
+                "format": "duration"
+            }
+        ]
     },
     {
         "Intent Name": "monthly_performance_trend",
@@ -102,7 +432,62 @@
         "PHP Action": "",
         "Procedure": "PR_EMPLOYEE_ACTIVITY_FLAT",
         "Roles": "ADMIN, EXECUTIVE",
-        "Notes": ""
+        "Notes": "",
+        "Response Metrics": [
+            {
+                "label": "Logged hours",
+                "matches": [
+                    "logged hours",
+                    "hours logged",
+                    "logged time"
+                ],
+                "path": "data12.*.TotalLoggedHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Productive hours",
+                "matches": [
+                    "productive hours",
+                    "productive time"
+                ],
+                "path": "data12.*.TotalProductiveHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Idle hours",
+                "matches": [
+                    "idle hours",
+                    "idle time"
+                ],
+                "path": "data12.*.TotalIdleHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Time on system",
+                "matches": [
+                    "time on system",
+                    "on-system hours",
+                    "on system hours"
+                ],
+                "path": "data12.*.TOTAL_ON_SYSTEM",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Time away from system",
+                "matches": [
+                    "time away from system",
+                    "away-from-system hours",
+                    "away from system hours"
+                ],
+                "path": "data12.*.AwayFromSystem",
+                "aggregation": "sum",
+                "format": "duration"
+            }
+        ]
     },
     {
         "Intent Name": "employee_monthly_report",
@@ -117,7 +502,62 @@
         "PHP Action": "",
         "Procedure": "PR_EMPLOYEE_ACTIVITY_FLAT",
         "Roles": "ADMIN, EXECUTIVE",
-        "Notes": "ids=employee ID. month=January. year=2026"
+        "Notes": "ids=employee ID. month=January. year=2026",
+        "Response Metrics": [
+            {
+                "label": "Logged hours",
+                "matches": [
+                    "logged hours",
+                    "hours logged",
+                    "logged time"
+                ],
+                "path": "data12.*.TotalLoggedHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Productive hours",
+                "matches": [
+                    "productive hours",
+                    "productive time"
+                ],
+                "path": "data12.*.TotalProductiveHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Idle hours",
+                "matches": [
+                    "idle hours",
+                    "idle time"
+                ],
+                "path": "data12.*.TotalIdleHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Time on system",
+                "matches": [
+                    "time on system",
+                    "on-system hours",
+                    "on system hours"
+                ],
+                "path": "data12.*.TOTAL_ON_SYSTEM",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Time away from system",
+                "matches": [
+                    "time away from system",
+                    "away-from-system hours",
+                    "away from system hours"
+                ],
+                "path": "data12.*.AwayFromSystem",
+                "aggregation": "sum",
+                "format": "duration"
+            }
+        ]
     },
     {
         "Intent Name": "department_summary",
@@ -132,7 +572,62 @@
         "PHP Action": "",
         "Procedure": "PR_EMPLOYEE_ACTIVITY_FLAT",
         "Roles": "ADMIN, EXECUTIVE",
-        "Notes": "All filter params are UPPERCASE arrays. userid=viewer auto-injected. Default reportType=SUMMARY_REPORT"
+        "Notes": "All filter params are UPPERCASE arrays. userid=viewer auto-injected. Default reportType=SUMMARY_REPORT",
+        "Response Metrics": [
+            {
+                "label": "Logged hours",
+                "matches": [
+                    "logged hours",
+                    "hours logged",
+                    "logged time"
+                ],
+                "path": "data.*.TotalLoggedHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Productive hours",
+                "matches": [
+                    "productive hours",
+                    "productive time"
+                ],
+                "path": "data.*.TotalProductiveHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Idle hours",
+                "matches": [
+                    "idle hours",
+                    "idle time"
+                ],
+                "path": "data.*.TotalIdleHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Time on system",
+                "matches": [
+                    "time on system",
+                    "on-system hours",
+                    "on system hours"
+                ],
+                "path": "data.*.TOTAL_ON_SYSTEM",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Time away from system",
+                "matches": [
+                    "time away from system",
+                    "away-from-system hours",
+                    "away from system hours"
+                ],
+                "path": "data.*.AwayFromSystem",
+                "aggregation": "sum",
+                "format": "duration"
+            }
+        ]
     },
     {
         "Intent Name": "role_summary",
@@ -147,7 +642,62 @@
         "PHP Action": "",
         "Procedure": "PR_EMPLOYEE_ACTIVITY_FLAT",
         "Roles": "ADMIN, EXECUTIVE",
-        "Notes": ""
+        "Notes": "",
+        "Response Metrics": [
+            {
+                "label": "Logged hours",
+                "matches": [
+                    "logged hours",
+                    "hours logged",
+                    "logged time"
+                ],
+                "path": "data.*.TotalLoggedHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Productive hours",
+                "matches": [
+                    "productive hours",
+                    "productive time"
+                ],
+                "path": "data.*.TotalProductiveHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Idle hours",
+                "matches": [
+                    "idle hours",
+                    "idle time"
+                ],
+                "path": "data.*.TotalIdleHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Time on system",
+                "matches": [
+                    "time on system",
+                    "on-system hours",
+                    "on system hours"
+                ],
+                "path": "data.*.TOTAL_ON_SYSTEM",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Time away from system",
+                "matches": [
+                    "time away from system",
+                    "away-from-system hours",
+                    "away from system hours"
+                ],
+                "path": "data.*.AwayFromSystem",
+                "aggregation": "sum",
+                "format": "duration"
+            }
+        ]
     },
     {
         "Intent Name": "shift_summary",
@@ -162,7 +712,62 @@
         "PHP Action": "",
         "Procedure": "PR_EMPLOYEE_ACTIVITY_FLAT",
         "Roles": "ADMIN, EXECUTIVE",
-        "Notes": ""
+        "Notes": "",
+        "Response Metrics": [
+            {
+                "label": "Logged hours",
+                "matches": [
+                    "logged hours",
+                    "hours logged",
+                    "logged time"
+                ],
+                "path": "data.*.TotalLoggedHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Productive hours",
+                "matches": [
+                    "productive hours",
+                    "productive time"
+                ],
+                "path": "data.*.TotalProductiveHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Idle hours",
+                "matches": [
+                    "idle hours",
+                    "idle time"
+                ],
+                "path": "data.*.TotalIdleHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Time on system",
+                "matches": [
+                    "time on system",
+                    "on-system hours",
+                    "on system hours"
+                ],
+                "path": "data.*.TOTAL_ON_SYSTEM",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Time away from system",
+                "matches": [
+                    "time away from system",
+                    "away-from-system hours",
+                    "away from system hours"
+                ],
+                "path": "data.*.AwayFromSystem",
+                "aggregation": "sum",
+                "format": "duration"
+            }
+        ]
     },
     {
         "Intent Name": "productivity_distribution",
@@ -177,7 +782,62 @@
         "PHP Action": "",
         "Procedure": "PR_EMPLOYEE_ACTIVITY_FLAT",
         "Roles": "ADMIN, EXECUTIVE",
-        "Notes": ""
+        "Notes": "",
+        "Response Metrics": [
+            {
+                "label": "Logged hours",
+                "matches": [
+                    "logged hours",
+                    "hours logged",
+                    "logged time"
+                ],
+                "path": "data.*.TotalLoggedHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Productive hours",
+                "matches": [
+                    "productive hours",
+                    "productive time"
+                ],
+                "path": "data.*.TotalProductiveHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Idle hours",
+                "matches": [
+                    "idle hours",
+                    "idle time"
+                ],
+                "path": "data.*.TotalIdleHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Time on system",
+                "matches": [
+                    "time on system",
+                    "on-system hours",
+                    "on system hours"
+                ],
+                "path": "data.*.TOTAL_ON_SYSTEM",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Time away from system",
+                "matches": [
+                    "time away from system",
+                    "away-from-system hours",
+                    "away from system hours"
+                ],
+                "path": "data.*.AwayFromSystem",
+                "aggregation": "sum",
+                "format": "duration"
+            }
+        ]
     },
     {
         "Intent Name": "workforce_summary",
@@ -192,7 +852,62 @@
         "PHP Action": "",
         "Procedure": "PR_EMPLOYEE_ACTIVITY_FLAT",
         "Roles": "ADMIN, EXECUTIVE",
-        "Notes": ""
+        "Notes": "",
+        "Response Metrics": [
+            {
+                "label": "Logged hours",
+                "matches": [
+                    "logged hours",
+                    "hours logged",
+                    "logged time"
+                ],
+                "path": "data.*.TotalLoggedHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Productive hours",
+                "matches": [
+                    "productive hours",
+                    "productive time"
+                ],
+                "path": "data.*.TotalProductiveHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Idle hours",
+                "matches": [
+                    "idle hours",
+                    "idle time"
+                ],
+                "path": "data.*.TotalIdleHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Time on system",
+                "matches": [
+                    "time on system",
+                    "on-system hours",
+                    "on system hours"
+                ],
+                "path": "data.*.TOTAL_ON_SYSTEM",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Time away from system",
+                "matches": [
+                    "time away from system",
+                    "away-from-system hours",
+                    "away from system hours"
+                ],
+                "path": "data.*.AwayFromSystem",
+                "aggregation": "sum",
+                "format": "duration"
+            }
+        ]
     },
     {
         "Intent Name": "department_group_analysis",
@@ -207,7 +922,62 @@
         "PHP Action": "",
         "Procedure": "PR_EMPLOYEE_ACTIVITY_FLAT",
         "Roles": "ADMIN, EXECUTIVE",
-        "Notes": "selectedDepartments=array. EMPID=viewer (not filter). ids=employee filter."
+        "Notes": "selectedDepartments=array. EMPID=viewer (not filter). ids=employee filter.",
+        "Response Metrics": [
+            {
+                "label": "Logged hours",
+                "matches": [
+                    "logged hours",
+                    "hours logged",
+                    "logged time"
+                ],
+                "path": "data.*.TotalLoggedHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Productive hours",
+                "matches": [
+                    "productive hours",
+                    "productive time"
+                ],
+                "path": "data.*.TotalProductiveHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Idle hours",
+                "matches": [
+                    "idle hours",
+                    "idle time"
+                ],
+                "path": "data.*.TotalIdleHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Time on system",
+                "matches": [
+                    "time on system",
+                    "on-system hours",
+                    "on system hours"
+                ],
+                "path": "data.*.TOTAL_ON_SYSTEM",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Time away from system",
+                "matches": [
+                    "time away from system",
+                    "away-from-system hours",
+                    "away from system hours"
+                ],
+                "path": "data.*.AwayFromSystem",
+                "aggregation": "sum",
+                "format": "duration"
+            }
+        ]
     },
     {
         "Intent Name": "team_group_analysis",
@@ -222,7 +992,62 @@
         "PHP Action": "",
         "Procedure": "PR_EMPLOYEE_ACTIVITY_FLAT",
         "Roles": "ADMIN, EXECUTIVE",
-        "Notes": "selectedTeams=array of team names"
+        "Notes": "selectedTeams=array of team names",
+        "Response Metrics": [
+            {
+                "label": "Logged hours",
+                "matches": [
+                    "logged hours",
+                    "hours logged",
+                    "logged time"
+                ],
+                "path": "data.*.TotalLoggedHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Productive hours",
+                "matches": [
+                    "productive hours",
+                    "productive time"
+                ],
+                "path": "data.*.TotalProductiveHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Idle hours",
+                "matches": [
+                    "idle hours",
+                    "idle time"
+                ],
+                "path": "data.*.TotalIdleHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Time on system",
+                "matches": [
+                    "time on system",
+                    "on-system hours",
+                    "on system hours"
+                ],
+                "path": "data.*.TOTAL_ON_SYSTEM",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Time away from system",
+                "matches": [
+                    "time away from system",
+                    "away-from-system hours",
+                    "away from system hours"
+                ],
+                "path": "data.*.AwayFromSystem",
+                "aggregation": "sum",
+                "format": "duration"
+            }
+        ]
     },
     {
         "Intent Name": "project_group_analysis",
@@ -237,7 +1062,62 @@
         "PHP Action": "",
         "Procedure": "PR_EMPLOYEE_ACTIVITY_FLAT",
         "Roles": "ADMIN, EXECUTIVE",
-        "Notes": ""
+        "Notes": "",
+        "Response Metrics": [
+            {
+                "label": "Logged hours",
+                "matches": [
+                    "logged hours",
+                    "hours logged",
+                    "logged time"
+                ],
+                "path": "data.*.TotalLoggedHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Productive hours",
+                "matches": [
+                    "productive hours",
+                    "productive time"
+                ],
+                "path": "data.*.TotalProductiveHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Idle hours",
+                "matches": [
+                    "idle hours",
+                    "idle time"
+                ],
+                "path": "data.*.TotalIdleHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Time on system",
+                "matches": [
+                    "time on system",
+                    "on-system hours",
+                    "on system hours"
+                ],
+                "path": "data.*.TOTAL_ON_SYSTEM",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Time away from system",
+                "matches": [
+                    "time away from system",
+                    "away-from-system hours",
+                    "away from system hours"
+                ],
+                "path": "data.*.AwayFromSystem",
+                "aggregation": "sum",
+                "format": "duration"
+            }
+        ]
     },
     {
         "Intent Name": "shift_group_analysis",
@@ -252,7 +1132,62 @@
         "PHP Action": "",
         "Procedure": "PR_EMPLOYEE_ACTIVITY_FLAT",
         "Roles": "ADMIN, EXECUTIVE",
-        "Notes": "selectedShift=array of shift names"
+        "Notes": "selectedShift=array of shift names",
+        "Response Metrics": [
+            {
+                "label": "Logged hours",
+                "matches": [
+                    "logged hours",
+                    "hours logged",
+                    "logged time"
+                ],
+                "path": "data.*.TotalLoggedHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Productive hours",
+                "matches": [
+                    "productive hours",
+                    "productive time"
+                ],
+                "path": "data.*.TotalProductiveHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Idle hours",
+                "matches": [
+                    "idle hours",
+                    "idle time"
+                ],
+                "path": "data.*.TotalIdleHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Time on system",
+                "matches": [
+                    "time on system",
+                    "on-system hours",
+                    "on system hours"
+                ],
+                "path": "data.*.TOTAL_ON_SYSTEM",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Time away from system",
+                "matches": [
+                    "time away from system",
+                    "away-from-system hours",
+                    "away from system hours"
+                ],
+                "path": "data.*.AwayFromSystem",
+                "aggregation": "sum",
+                "format": "duration"
+            }
+        ]
     },
     {
         "Intent Name": "group_productivity_report",
@@ -267,7 +1202,62 @@
         "PHP Action": "",
         "Procedure": "PR_EMPLOYEE_ACTIVITY_FLAT",
         "Roles": "ADMIN, EXECUTIVE",
-        "Notes": ""
+        "Notes": "",
+        "Response Metrics": [
+            {
+                "label": "Logged hours",
+                "matches": [
+                    "logged hours",
+                    "hours logged",
+                    "logged time"
+                ],
+                "path": "data.*.TotalLoggedHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Productive hours",
+                "matches": [
+                    "productive hours",
+                    "productive time"
+                ],
+                "path": "data.*.TotalProductiveHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Idle hours",
+                "matches": [
+                    "idle hours",
+                    "idle time"
+                ],
+                "path": "data.*.TotalIdleHours",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Time on system",
+                "matches": [
+                    "time on system",
+                    "on-system hours",
+                    "on system hours"
+                ],
+                "path": "data.*.TOTAL_ON_SYSTEM",
+                "aggregation": "sum",
+                "format": "duration"
+            },
+            {
+                "label": "Time away from system",
+                "matches": [
+                    "time away from system",
+                    "away-from-system hours",
+                    "away from system hours"
+                ],
+                "path": "data.*.AwayFromSystem",
+                "aggregation": "sum",
+                "format": "duration"
+            }
+        ]
     },
     {
         "Intent Name": "employee_attendance_calendar",
@@ -282,7 +1272,8 @@
         "PHP Action": "",
         "Procedure": "PR_GET_ATTENDANCE_REPORT",
         "Roles": "ADMIN, LEADERSHIP, EXECUTIVE",
-        "Notes": "from_date=YYYY-MM-DD month start. to_date=YYYY-MM-DD month end. empid=employee to view. user_id=viewer auto-injected."
+        "Notes": "from_date=YYYY-MM-DD month start. to_date=YYYY-MM-DD month end. empid=employee to view. user_id=viewer auto-injected.",
+        "Response Metrics": ""
     },
     {
         "Intent Name": "attendance_status_tracking",
@@ -297,7 +1288,8 @@
         "PHP Action": "",
         "Procedure": "PR_GET_ATTENDANCE_REPORT",
         "Roles": "ADMIN, LEADERSHIP, EXECUTIVE",
-        "Notes": ""
+        "Notes": "",
+        "Response Metrics": ""
     },
     {
         "Intent Name": "attendance_regularisation",
@@ -312,7 +1304,8 @@
         "PHP Action": "",
         "Procedure": "PR_GET_ATTENDANCE_REPORT",
         "Roles": "ADMIN, LEADERSHIP, EXECUTIVE",
-        "Notes": ""
+        "Notes": "",
+        "Response Metrics": ""
     },
     {
         "Intent Name": "attendance_summary",
@@ -327,7 +1320,8 @@
         "PHP Action": "get_attendance",
         "Procedure": "PR_GET_ATTENDANCE_REPORT",
         "Roles": "ADMIN, LEADERSHIP, EXECUTIVE",
-        "Notes": "action=get_attendance. userId=viewer auto-injected. empId=specific employee filter."
+        "Notes": "action=get_attendance. userId=viewer auto-injected. empId=specific employee filter.",
+        "Response Metrics": ""
     },
     {
         "Intent Name": "attendance_dispute",
@@ -342,7 +1336,8 @@
         "PHP Action": "dispute_attendance",
         "Procedure": "PR_GET_ATTENDANCE_REPORT",
         "Roles": "EXECUTIVE",
-        "Notes": "action=dispute_attendance. attendanceId=numeric ID of the record."
+        "Notes": "action=dispute_attendance. attendanceId=numeric ID of the record.",
+        "Response Metrics": ""
     },
     {
         "Intent Name": "attendance_override",
@@ -357,7 +1352,8 @@
         "PHP Action": "override_attendance",
         "Procedure": "PR_GET_ATTENDANCE_REPORT",
         "Roles": "ADMIN, LEADERSHIP",
-        "Notes": ""
+        "Notes": "",
+        "Response Metrics": ""
     },
     {
         "Intent Name": "pending_disputes",
@@ -372,7 +1368,8 @@
         "PHP Action": "get_pending_disputes",
         "Procedure": "PR_GET_ATTENDANCE_REPORT",
         "Roles": "ADMIN, LEADERSHIP",
-        "Notes": ""
+        "Notes": "",
+        "Response Metrics": ""
     },
     {
         "Intent Name": "approve_attendance_dispute",
@@ -387,7 +1384,8 @@
         "PHP Action": "approve_dispute",
         "Procedure": "PR_GET_ATTENDANCE_REPORT",
         "Roles": "ADMIN, LEADERSHIP",
-        "Notes": ""
+        "Notes": "",
+        "Response Metrics": ""
     },
     {
         "Intent Name": "reject_attendance_dispute",
@@ -402,7 +1400,8 @@
         "PHP Action": "reject_dispute",
         "Procedure": "PR_GET_ATTENDANCE_REPORT",
         "Roles": "ADMIN, LEADERSHIP",
-        "Notes": "comments=rejection reason, required"
+        "Notes": "comments=rejection reason, required",
+        "Response Metrics": ""
     },
     {
         "Intent Name": "leave_application_list",
@@ -417,7 +1416,8 @@
         "PHP Action": "get_leave_applications",
         "Procedure": "LEAVE_TRACKER",
         "Roles": "ADMIN, LEADERSHIP, EXECUTIVE",
-        "Notes": "action auto-injected as get_leave_applications. userId auto-injected. empId=specific employee."
+        "Notes": "action auto-injected as get_leave_applications. userId auto-injected. empId=specific employee.",
+        "Response Metrics": ""
     },
     {
         "Intent Name": "apply_leave",
@@ -432,7 +1432,8 @@
         "PHP Action": "apply_leave",
         "Procedure": "LEAVE_TRACKER",
         "Roles": "EXECUTIVE",
-        "Notes": ""
+        "Notes": "",
+        "Response Metrics": ""
     },
     {
         "Intent Name": "pending_leave_requests",
@@ -447,7 +1448,8 @@
         "PHP Action": "get_leave_applications",
         "Procedure": "LEAVE_TRACKER",
         "Roles": "ADMIN, LEADERSHIP",
-        "Notes": "Filter status=PENDING APPROVAL client-side or pass status param"
+        "Notes": "Filter status=PENDING APPROVAL client-side or pass status param",
+        "Response Metrics": ""
     },
     {
         "Intent Name": "reportee_list_view",
@@ -462,7 +1464,8 @@
         "PHP Action": "",
         "Procedure": "EMP_DB Hierarchy Lookup",
         "Roles": "ADMIN, LEADERSHIP, EXECUTIVE",
-        "Notes": "userid=logged-in employee auto-injected. Returns tree with manager, loggedIn, reportees."
+        "Notes": "userid=logged-in employee auto-injected. Returns tree with manager, loggedIn, reportees.",
+        "Response Metrics": ""
     },
     {
         "Intent Name": "reporting_manager_view",
@@ -477,7 +1480,8 @@
         "PHP Action": "",
         "Procedure": "EMP_DB Hierarchy Lookup",
         "Roles": "ADMIN, LEADERSHIP, EXECUTIVE",
-        "Notes": ""
+        "Notes": "",
+        "Response Metrics": ""
     },
     {
         "Intent Name": "organization_hierarchy",
@@ -492,7 +1496,8 @@
         "PHP Action": "",
         "Procedure": "EMP_DB Hierarchy Lookup",
         "Roles": "ADMIN, LEADERSHIP, EXECUTIVE",
-        "Notes": ""
+        "Notes": "",
+        "Response Metrics": ""
     },
     {
         "Intent Name": "time_on_system_analysis",
@@ -507,7 +1512,8 @@
         "PHP Action": "",
         "Procedure": "PR_GET_ATTENDANCE_REPORT",
         "Roles": "ADMIN, LEADERSHIP, EXECUTIVE",
-        "Notes": "from_date/to_date=YYYY-MM-DD. empid=employee to view. user_id=viewer auto-injected. Returns {dates, employees[{empid, empname, days:{date:{hours, display, status}}}]}"
+        "Notes": "from_date/to_date=YYYY-MM-DD. empid=employee to view. user_id=viewer auto-injected. Returns {dates, employees[{empid, empname, days:{date:{hours, display, status}}}]}",
+        "Response Metrics": ""
     },
     {
         "Intent Name": "system_attendance_report",
@@ -522,7 +1528,8 @@
         "PHP Action": "",
         "Procedure": "PR_GET_ATTENDANCE_REPORT",
         "Roles": "ADMIN, LEADERSHIP, EXECUTIVE",
-        "Notes": ""
+        "Notes": "",
+        "Response Metrics": ""
     },
     {
         "Intent Name": "website_usage_analysis",
@@ -537,7 +1544,8 @@
         "PHP Action": "",
         "Procedure": "PR_APP_URL_USAGE_TIMELINE",
         "Roles": "ADMIN, LEADERSHIP, EXECUTIVE",
-        "Notes": "date=YYYY-MM-DD single day. EMPID=employee to view (UPPERCASE). userid=viewer auto-injected. POST form-encoded not JSON."
+        "Notes": "date=YYYY-MM-DD single day. EMPID=employee to view (UPPERCASE). userid=viewer auto-injected. POST form-encoded not JSON.",
+        "Response Metrics": ""
     },
     {
         "Intent Name": "user_productivity_tracking",
@@ -552,7 +1560,8 @@
         "PHP Action": "",
         "Procedure": "PR_APP_URL_USAGE_TIMELINE_AGG_EX",
         "Roles": "ADMIN, LEADERSHIP, EXECUTIVE",
-        "Notes": "Same params as timelineapp.php but different stored procedure. Aggregated view."
+        "Notes": "Same params as timelineapp.php but different stored procedure. Aggregated view.",
+        "Response Metrics": ""
     },
     {
         "Intent Name": "website_usage_summary",
@@ -567,7 +1576,8 @@
         "PHP Action": "",
         "Procedure": "PR_GET_TBL_WEBSITE_USAGE_SUMMARY",
         "Roles": "ADMIN, LEADERSHIP",
-        "Notes": "userId=viewer auto-injected. empId=specific employee filter (camelCase). Returns utilizationData, topDomainsData, topWebsitesData, userActivityData."
+        "Notes": "userId=viewer auto-injected. empId=specific employee filter (camelCase). Returns utilizationData, topDomainsData, topWebsitesData, userActivityData.",
+        "Response Metrics": ""
     },
     {
         "Intent Name": "productive_website_usage",
@@ -582,7 +1592,8 @@
         "PHP Action": "",
         "Procedure": "PR_GET_TBL_WEBSITE_USAGE_SUMMARY",
         "Roles": "ADMIN, LEADERSHIP",
-        "Notes": ""
+        "Notes": "",
+        "Response Metrics": ""
     },
     {
         "Intent Name": "non_productive_website_usage",
@@ -597,7 +1608,8 @@
         "PHP Action": "",
         "Procedure": "PR_GET_TBL_WEBSITE_USAGE_SUMMARY",
         "Roles": "ADMIN, LEADERSHIP",
-        "Notes": ""
+        "Notes": "",
+        "Response Metrics": ""
     },
     {
         "Intent Name": "restricted_website_report",
@@ -612,7 +1624,8 @@
         "PHP Action": "",
         "Procedure": "PR_GET_TBL_WEBSITE_USAGE_SUMMARY",
         "Roles": "ADMIN, LEADERSHIP",
-        "Notes": "Filter restricted sites client-side from PRODUCTIVE_YN=N in response"
+        "Notes": "Filter restricted sites client-side from PRODUCTIVE_YN=N in response",
+        "Response Metrics": ""
     },
     {
         "Intent Name": "holiday_list",
@@ -627,7 +1640,8 @@
         "PHP Action": "get_holidays",
         "Procedure": "PR_GET_HOLIDAY_MASTER",
         "Roles": "ADMIN, LEADERSHIP, EXECUTIVE",
-        "Notes": "action=get_holidays auto-injected. from_date/to_date=YYYY-MM-DD."
+        "Notes": "action=get_holidays auto-injected. from_date/to_date=YYYY-MM-DD.",
+        "Response Metrics": ""
     },
     {
         "Intent Name": "efficiency_comparison",
@@ -642,7 +1656,42 @@
         "PHP Action": "",
         "Procedure": "PR_EMPLOYEE_ACTIVITY_FLAT",
         "Roles": "ADMIN, EXECUTIVE",
-        "Notes": "userid=scope auto-injected. Dates auto-calculated (current month vs last month). No date param needed."
+        "Notes": "userid=scope auto-injected. Dates auto-calculated (current month vs last month). No date param needed.",
+        "Response Metrics": [
+            {
+                "label": "Last month efficiency",
+                "matches": [
+                    "last month efficiency",
+                    "previous month efficiency"
+                ],
+                "path": "last_month.efficiency_percentage",
+                "aggregation": "first",
+                "format": "text",
+                "suffix": "%"
+            },
+            {
+                "label": "Current month efficiency",
+                "matches": [
+                    "current month efficiency",
+                    "this month efficiency"
+                ],
+                "path": "current_month.efficiency_percentage",
+                "aggregation": "first",
+                "format": "text",
+                "suffix": "%"
+            },
+            {
+                "label": "Efficiency change",
+                "matches": [
+                    "efficiency change percent",
+                    "percentage efficiency change"
+                ],
+                "path": "comparison.efficiency_change_percent",
+                "aggregation": "first",
+                "format": "text",
+                "suffix": "%"
+            }
+        ]
     },
     {
         "Intent Name": "top_application_usage",
@@ -657,7 +1706,8 @@
         "PHP Action": "",
         "Procedure": "PR_GET_TBL_WEBSITE_USAGE_SUMMARY",
         "Roles": "ADMIN, LEADERSHIP",
-        "Notes": ""
+        "Notes": "",
+        "Response Metrics": ""
     },
     {
         "Intent Name": "user_profile_details",
@@ -672,7 +1722,8 @@
         "PHP Action": "",
         "Procedure": "EMP_DB Hierarchy Lookup",
         "Roles": "ADMIN, LEADERSHIP, EXECUTIVE",
-        "Notes": "userid=logged-in employee auto-injected. Returns tree with manager, loggedIn, reportees."
+        "Notes": "userid=logged-in employee auto-injected. Returns tree with manager, loggedIn, reportees.",
+        "Response Metrics": ""
     },
     {
         "Intent Name": "last_leave_taken",
@@ -687,6 +1738,19 @@
         "PHP Action": "get_leave_applications",
         "Procedure": "LEAVE_TRACKER",
         "Roles": "ADMIN, LEADERSHIP, EXECUTIVE",
-        "Notes": "Fetches leave history without a date range; RAG returns the latest past APPROVED leave. userId is auto-injected."
+        "Notes": "Fetches leave history without a date range; RAG returns the latest past APPROVED leave. userId is auto-injected.",
+        "Response Metrics": [
+            {
+                "label": "Last approved leave ended",
+                "matches": [
+                    "when did i last take leave",
+                    "last leave date",
+                    "last leave taken"
+                ],
+                "path": "data.0.toDate",
+                "aggregation": "first",
+                "format": "text"
+            }
+        ]
     }
 ]

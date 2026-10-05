@@ -54,6 +54,99 @@ class ResponseService:
             print(f"[ResponseService] LLM generation error: {e}")
             return "Here are the results:"
 
+    @staticmethod
+    def _schema_value(data, path: str):
+        """Resolve a dotted response path; '*' expands a list of records."""
+        values = [data]
+        for part in path.split("."):
+            next_values = []
+            for value in values:
+                if part == "*" and isinstance(value, list):
+                    next_values.extend(value)
+                elif isinstance(value, dict) and part in value:
+                    next_values.append(value[part])
+            values = next_values
+        return values
+
+    @staticmethod
+    def _duration_seconds(value):
+        """Convert a HH:MM:SS value to seconds without assuming a day limit."""
+        if isinstance(value, (int, float)):
+            return float(value)
+        parts = str(value).strip().split(":")
+        if len(parts) != 3:
+            raise ValueError("Duration must use HH:MM:SS format")
+        hours, minutes, seconds = (int(part) for part in parts)
+        return hours * 3600 + minutes * 60 + seconds
+
+    @staticmethod
+    def _format_duration(seconds: float) -> str:
+        total = round(seconds)
+        hours, remainder = divmod(total, 3600)
+        minutes, seconds = divmod(remainder, 60)
+        return f"{hours:02d}:{minutes:02d}:{seconds:02d}"
+
+    def _schema_answer(
+        self, question: str, data, response_metrics, direct_metric: bool
+    ) -> str | None:
+        """Answer a single explicitly mapped metric directly from API data."""
+        if not direct_metric or not isinstance(response_metrics, list):
+            return None
+
+        normalized_question = self._normalize(question)
+        matches = []
+        for metric in response_metrics:
+            if not isinstance(metric, dict):
+                continue
+            aliases = metric.get("matches", [])
+            matched_aliases = [
+                self._normalize(alias)
+                for alias in aliases
+                if isinstance(alias, str)
+                and re.search(
+                    rf"(?<!\w){re.escape(self._normalize(alias))}(?!\w)",
+                    normalized_question,
+                )
+            ]
+            if matched_aliases:
+                matches.append((len(max(matched_aliases, key=len)), metric))
+
+        # Only shortcut when one configured metric matches. Requests naming
+        # multiple metrics continue through the existing LLM path.
+        if len(matches) != 1:
+            return None
+
+        metric = matches[0][1]
+        path = metric.get("path")
+        if not isinstance(path, str) or not path:
+            return None
+        try:
+            values = [value for value in self._schema_value(data, path) if value is not None]
+            if not values:
+                return None
+            aggregation = metric.get("aggregation", "first")
+            value_format = metric.get("format", "text")
+            if value_format == "duration":
+                seconds = [self._duration_seconds(value) for value in values]
+                if aggregation == "sum":
+                    result = sum(seconds)
+                elif aggregation == "average":
+                    result = sum(seconds) / len(seconds)
+                elif aggregation == "first":
+                    result = seconds[0]
+                else:
+                    return None
+                rendered = self._format_duration(result)
+            else:
+                if aggregation != "first" or len(values) != 1:
+                    return None
+                rendered = f"{values[0]}{metric.get('suffix', '')}"
+        except (TypeError, ValueError, ZeroDivisionError):
+            return None
+
+        label = str(metric.get("label", "Result")).strip()
+        return f"{label}: **{rendered}**."
+
     def _matches_designation_filter(self, question: str, tree: dict = None) -> str | None:
         q = self._normalize(question)
         if not q:
@@ -117,7 +210,14 @@ class ResponseService:
     # Main generate
     # ----------------------------------------------------------
 
-    def generate(self, question: str, api_response, intent: str = None) -> dict:
+    def generate(
+        self,
+        question: str,
+        api_response,
+        intent: str = None,
+        response_metrics: list = None,
+        direct_metric: bool = False,
+    ) -> dict:
         if isinstance(api_response, dict):
             data = api_response.get("data")
             if isinstance(data, dict):
@@ -241,8 +341,14 @@ class ResponseService:
                         "tree": self._filter_reportees(tree, designation_filter),
                     }
 
-        # Generate dynamic natural language answer (single metric, summary, ranking, or intro)
-        reply = self._generate_llm_reply(question, api_response)
+        # Registry metadata enables exact answers for simple single-metric
+        # requests without another model generation. Other requests retain
+        # the existing natural-language generation path.
+        reply = self._schema_answer(
+            question, api_response, response_metrics, direct_metric
+        )
+        if reply is None:
+            reply = self._generate_llm_reply(question, api_response)
 
         return {
             "status": "success",
